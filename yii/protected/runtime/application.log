@@ -1,0 +1,1081 @@
+2013/08/09 23:11:08 [error] [exception.CDbException] could not find driver
+2013/08/09 23:11:08 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection.' in /usr/share/nginx/www/framework/db/CDbConnection.php:387
+Stack trace:
+#0 /usr/share/nginx/www/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /usr/share/nginx/www/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /usr/share/nginx/www/framework/base/CModule.php(387): CDbConnection->init()
+#3 /usr/share/nginx/www/framework/base/CApplication.php(438): CModule->getComponent('db')
+#4 /usr/share/nginx/www/framework/db/ar/CActiveRecord.php(623): CApplication->getDb()
+#5 /usr/share/nginx/www/framework/db/ar/CActiveRecord.php(2309): CActiveRecord->getDbConnection()
+#6 /usr/share/nginx/www/framework/db/ar/CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(Post))
+#7 /usr/share/nginx/www/framework/web/CActiveDataProvider.php(74): CActiveRecord::model('Post')
+#8 /usr/share/nginx/www/demos/blog/protected/controllers/PostController.php(132): CActiveDataProvider->__construct('Post', Array)
+#9 /usr/share/nginx/www/framework/web/actions/CInlineAction.php(49): PostController->actionIndex()
+#10 /usr/share/nginx/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /usr/share/nginx/www/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 /usr/share/nginx/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#13 /usr/share/nginx/www/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 /usr/share/nginx/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 /usr/share/nginx/www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 /usr/share/nginx/www/framework/web/CController.php(291): CFilterChain->run()
+#17 /usr/share/nginx/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /usr/share/nginx/www/framework/web/CWebApplication.php(282): CController->run('')
+#19 /usr/share/nginx/www/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#20 /usr/share/nginx/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#21 /usr/share/nginx/www/demos/blog/index.php(11): CApplication->run()
+#22 {main}
+REQUEST_URI=/demos/blog/
+---
+2013/08/09 23:11:30 [error] [exception.CDbException] could not find driver
+2013/08/09 23:11:30 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection.' in /usr/share/nginx/www/framework/db/CDbConnection.php:387
+Stack trace:
+#0 /usr/share/nginx/www/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /usr/share/nginx/www/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /usr/share/nginx/www/framework/base/CModule.php(387): CDbConnection->init()
+#3 /usr/share/nginx/www/framework/base/CApplication.php(438): CModule->getComponent('db')
+#4 /usr/share/nginx/www/framework/db/ar/CActiveRecord.php(623): CApplication->getDb()
+#5 /usr/share/nginx/www/framework/db/ar/CActiveRecord.php(2309): CActiveRecord->getDbConnection()
+#6 /usr/share/nginx/www/framework/db/ar/CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(Post))
+#7 /usr/share/nginx/www/framework/web/CActiveDataProvider.php(74): CActiveRecord::model('Post')
+#8 /usr/share/nginx/www/demos/blog/protected/controllers/PostController.php(132): CActiveDataProvider->__construct('Post', Array)
+#9 /usr/share/nginx/www/framework/web/actions/CInlineAction.php(49): PostController->actionIndex()
+#10 /usr/share/nginx/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /usr/share/nginx/www/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 /usr/share/nginx/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#13 /usr/share/nginx/www/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 /usr/share/nginx/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 /usr/share/nginx/www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 /usr/share/nginx/www/framework/web/CController.php(291): CFilterChain->run()
+#17 /usr/share/nginx/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /usr/share/nginx/www/framework/web/CWebApplication.php(282): CController->run('')
+#19 /usr/share/nginx/www/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#20 /usr/share/nginx/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#21 /usr/share/nginx/www/demos/blog/index.php(11): CApplication->run()
+#22 {main}
+REQUEST_URI=/demos/blog/
+---
+2013/08/09 23:12:34 [error] [exception.CDbException] could not find driver
+2013/08/09 23:12:34 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection.' in /usr/share/nginx/www/framework/db/CDbConnection.php:387
+Stack trace:
+#0 /usr/share/nginx/www/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /usr/share/nginx/www/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /usr/share/nginx/www/framework/base/CModule.php(387): CDbConnection->init()
+#3 /usr/share/nginx/www/framework/base/CApplication.php(438): CModule->getComponent('db')
+#4 /usr/share/nginx/www/framework/db/ar/CActiveRecord.php(623): CApplication->getDb()
+#5 /usr/share/nginx/www/framework/db/ar/CActiveRecord.php(2309): CActiveRecord->getDbConnection()
+#6 /usr/share/nginx/www/framework/db/ar/CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(Post))
+#7 /usr/share/nginx/www/framework/web/CActiveDataProvider.php(74): CActiveRecord::model('Post')
+#8 /usr/share/nginx/www/demos/blog/protected/controllers/PostController.php(132): CActiveDataProvider->__construct('Post', Array)
+#9 /usr/share/nginx/www/framework/web/actions/CInlineAction.php(49): PostController->actionIndex()
+#10 /usr/share/nginx/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /usr/share/nginx/www/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 /usr/share/nginx/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#13 /usr/share/nginx/www/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 /usr/share/nginx/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 /usr/share/nginx/www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 /usr/share/nginx/www/framework/web/CController.php(291): CFilterChain->run()
+#17 /usr/share/nginx/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /usr/share/nginx/www/framework/web/CWebApplication.php(282): CController->run('')
+#19 /usr/share/nginx/www/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#20 /usr/share/nginx/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#21 /usr/share/nginx/www/demos/blog/index.php(11): CApplication->run()
+#22 {main}
+REQUEST_URI=/demos/blog/
+---
+2013/08/27 17:23:59 [error] [exception.CDbException] could not find driver
+2013/08/27 17:23:59 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection.' in /usr/share/nginx/www/framework/db/CDbConnection.php:387
+Stack trace:
+#0 /usr/share/nginx/www/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /usr/share/nginx/www/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /usr/share/nginx/www/framework/base/CModule.php(387): CDbConnection->init()
+#3 /usr/share/nginx/www/framework/base/CApplication.php(438): CModule->getComponent('db')
+#4 /usr/share/nginx/www/framework/db/ar/CActiveRecord.php(623): CApplication->getDb()
+#5 /usr/share/nginx/www/framework/db/ar/CActiveRecord.php(2309): CActiveRecord->getDbConnection()
+#6 /usr/share/nginx/www/framework/db/ar/CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(Post))
+#7 /usr/share/nginx/www/framework/web/CActiveDataProvider.php(74): CActiveRecord::model('Post')
+#8 /usr/share/nginx/www/demos/blog/protected/controllers/PostController.php(132): CActiveDataProvider->__construct('Post', Array)
+#9 /usr/share/nginx/www/framework/web/actions/CInlineAction.php(49): PostController->actionIndex()
+#10 /usr/share/nginx/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /usr/share/nginx/www/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 /usr/share/nginx/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#13 /usr/share/nginx/www/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 /usr/share/nginx/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 /usr/share/nginx/www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 /usr/share/nginx/www/framework/web/CController.php(291): CFilterChain->run()
+#17 /usr/share/nginx/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /usr/share/nginx/www/framework/web/CWebApplication.php(282): CController->run('')
+#19 /usr/share/nginx/www/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#20 /usr/share/nginx/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#21 /usr/share/nginx/www/demos/blog/index.php(11): CApplication->run()
+#22 {main}
+REQUEST_URI=/demos/blog/
+---
+2013/08/27 17:24:23 [error] [exception.CDbException] could not find driver
+2013/08/27 17:24:23 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection.' in /usr/share/nginx/www/framework/db/CDbConnection.php:387
+Stack trace:
+#0 /usr/share/nginx/www/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /usr/share/nginx/www/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /usr/share/nginx/www/framework/base/CModule.php(387): CDbConnection->init()
+#3 /usr/share/nginx/www/framework/base/CApplication.php(438): CModule->getComponent('db')
+#4 /usr/share/nginx/www/framework/db/ar/CActiveRecord.php(623): CApplication->getDb()
+#5 /usr/share/nginx/www/framework/db/ar/CActiveRecord.php(2309): CActiveRecord->getDbConnection()
+#6 /usr/share/nginx/www/framework/db/ar/CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(Post))
+#7 /usr/share/nginx/www/framework/web/CActiveDataProvider.php(74): CActiveRecord::model('Post')
+#8 /usr/share/nginx/www/demos/blog/protected/controllers/PostController.php(132): CActiveDataProvider->__construct('Post', Array)
+#9 /usr/share/nginx/www/framework/web/actions/CInlineAction.php(49): PostController->actionIndex()
+#10 /usr/share/nginx/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /usr/share/nginx/www/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 /usr/share/nginx/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#13 /usr/share/nginx/www/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 /usr/share/nginx/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 /usr/share/nginx/www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 /usr/share/nginx/www/framework/web/CController.php(291): CFilterChain->run()
+#17 /usr/share/nginx/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /usr/share/nginx/www/framework/web/CWebApplication.php(282): CController->run('')
+#19 /usr/share/nginx/www/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#20 /usr/share/nginx/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#21 /usr/share/nginx/www/demos/blog/index.php(11): CApplication->run()
+#22 {main}
+REQUEST_URI=/demos/blog/
+---
+2013/08/27 18:39:42 [error] [exception.CDbException] could not find driver
+2013/08/27 18:39:42 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection.' in /usr/share/nginx/www/framework/db/CDbConnection.php:387
+Stack trace:
+#0 /usr/share/nginx/www/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /usr/share/nginx/www/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /usr/share/nginx/www/framework/base/CModule.php(387): CDbConnection->init()
+#3 /usr/share/nginx/www/framework/base/CApplication.php(438): CModule->getComponent('db')
+#4 /usr/share/nginx/www/framework/db/ar/CActiveRecord.php(623): CApplication->getDb()
+#5 /usr/share/nginx/www/framework/db/ar/CActiveRecord.php(2309): CActiveRecord->getDbConnection()
+#6 /usr/share/nginx/www/framework/db/ar/CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(Post))
+#7 /usr/share/nginx/www/framework/web/CActiveDataProvider.php(74): CActiveRecord::model('Post')
+#8 /usr/share/nginx/www/demos/blog/protected/controllers/PostController.php(132): CActiveDataProvider->__construct('Post', Array)
+#9 /usr/share/nginx/www/framework/web/actions/CInlineAction.php(49): PostController->actionIndex()
+#10 /usr/share/nginx/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /usr/share/nginx/www/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 /usr/share/nginx/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#13 /usr/share/nginx/www/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 /usr/share/nginx/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 /usr/share/nginx/www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 /usr/share/nginx/www/framework/web/CController.php(291): CFilterChain->run()
+#17 /usr/share/nginx/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /usr/share/nginx/www/framework/web/CWebApplication.php(282): CController->run('')
+#19 /usr/share/nginx/www/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#20 /usr/share/nginx/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#21 /usr/share/nginx/www/demos/blog/index.php(11): CApplication->run()
+#22 {main}
+REQUEST_URI=/demos/blog/
+---
+2013/08/27 19:49:05 [error] [exception.CDbException] could not find driver
+2013/08/27 19:49:05 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection.' in /usr/share/nginx/www/framework/db/CDbConnection.php:387
+Stack trace:
+#0 /usr/share/nginx/www/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /usr/share/nginx/www/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /usr/share/nginx/www/framework/base/CModule.php(387): CDbConnection->init()
+#3 /usr/share/nginx/www/framework/base/CApplication.php(438): CModule->getComponent('db')
+#4 /usr/share/nginx/www/framework/db/ar/CActiveRecord.php(623): CApplication->getDb()
+#5 /usr/share/nginx/www/framework/db/ar/CActiveRecord.php(2309): CActiveRecord->getDbConnection()
+#6 /usr/share/nginx/www/framework/db/ar/CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(Post))
+#7 /usr/share/nginx/www/framework/web/CActiveDataProvider.php(74): CActiveRecord::model('Post')
+#8 /usr/share/nginx/www/demos/blog/protected/controllers/PostController.php(132): CActiveDataProvider->__construct('Post', Array)
+#9 /usr/share/nginx/www/framework/web/actions/CInlineAction.php(49): PostController->actionIndex()
+#10 /usr/share/nginx/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /usr/share/nginx/www/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 /usr/share/nginx/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#13 /usr/share/nginx/www/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 /usr/share/nginx/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 /usr/share/nginx/www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 /usr/share/nginx/www/framework/web/CController.php(291): CFilterChain->run()
+#17 /usr/share/nginx/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /usr/share/nginx/www/framework/web/CWebApplication.php(282): CController->run('index')
+#19 /usr/share/nginx/www/framework/web/CWebApplication.php(141): CWebApplication->runController('post/index')
+#20 /usr/share/nginx/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#21 /usr/share/nginx/www/demos/blog/index.php(11): CApplication->run()
+#22 {main}
+REQUEST_URI=/demos/blog/index.php/post/index
+HTTP_REFERER=http://localhost/demos/blog/index.php/site/page?view=about
+---
+2013/08/27 19:49:07 [error] [exception.CDbException] could not find driver
+2013/08/27 19:49:07 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection.' in /usr/share/nginx/www/framework/db/CDbConnection.php:387
+Stack trace:
+#0 /usr/share/nginx/www/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /usr/share/nginx/www/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /usr/share/nginx/www/framework/base/CModule.php(387): CDbConnection->init()
+#3 /usr/share/nginx/www/framework/base/CApplication.php(438): CModule->getComponent('db')
+#4 /usr/share/nginx/www/framework/db/ar/CActiveRecord.php(623): CApplication->getDb()
+#5 /usr/share/nginx/www/framework/db/ar/CActiveRecord.php(2309): CActiveRecord->getDbConnection()
+#6 /usr/share/nginx/www/framework/db/ar/CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(Post))
+#7 /usr/share/nginx/www/framework/web/CActiveDataProvider.php(74): CActiveRecord::model('Post')
+#8 /usr/share/nginx/www/demos/blog/protected/controllers/PostController.php(132): CActiveDataProvider->__construct('Post', Array)
+#9 /usr/share/nginx/www/framework/web/actions/CInlineAction.php(49): PostController->actionIndex()
+#10 /usr/share/nginx/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /usr/share/nginx/www/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 /usr/share/nginx/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#13 /usr/share/nginx/www/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 /usr/share/nginx/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 /usr/share/nginx/www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 /usr/share/nginx/www/framework/web/CController.php(291): CFilterChain->run()
+#17 /usr/share/nginx/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /usr/share/nginx/www/framework/web/CWebApplication.php(282): CController->run('index')
+#19 /usr/share/nginx/www/framework/web/CWebApplication.php(141): CWebApplication->runController('post/index')
+#20 /usr/share/nginx/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#21 /usr/share/nginx/www/demos/blog/index.php(11): CApplication->run()
+#22 {main}
+REQUEST_URI=/demos/blog/index.php/post/index
+HTTP_REFERER=http://localhost/demos/blog/index.php/post/index
+---
+2013/08/27 19:49:09 [error] [exception.CDbException] could not find driver
+2013/08/27 19:49:09 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection.' in /usr/share/nginx/www/framework/db/CDbConnection.php:387
+Stack trace:
+#0 /usr/share/nginx/www/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /usr/share/nginx/www/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /usr/share/nginx/www/framework/base/CModule.php(387): CDbConnection->init()
+#3 /usr/share/nginx/www/framework/base/CApplication.php(438): CModule->getComponent('db')
+#4 /usr/share/nginx/www/framework/db/ar/CActiveRecord.php(623): CApplication->getDb()
+#5 /usr/share/nginx/www/framework/db/ar/CActiveRecord.php(2309): CActiveRecord->getDbConnection()
+#6 /usr/share/nginx/www/framework/db/ar/CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(Post))
+#7 /usr/share/nginx/www/framework/web/CActiveDataProvider.php(74): CActiveRecord::model('Post')
+#8 /usr/share/nginx/www/demos/blog/protected/controllers/PostController.php(132): CActiveDataProvider->__construct('Post', Array)
+#9 /usr/share/nginx/www/framework/web/actions/CInlineAction.php(49): PostController->actionIndex()
+#10 /usr/share/nginx/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /usr/share/nginx/www/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 /usr/share/nginx/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#13 /usr/share/nginx/www/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 /usr/share/nginx/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 /usr/share/nginx/www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 /usr/share/nginx/www/framework/web/CController.php(291): CFilterChain->run()
+#17 /usr/share/nginx/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /usr/share/nginx/www/framework/web/CWebApplication.php(282): CController->run('index')
+#19 /usr/share/nginx/www/framework/web/CWebApplication.php(141): CWebApplication->runController('post/index')
+#20 /usr/share/nginx/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#21 /usr/share/nginx/www/demos/blog/index.php(11): CApplication->run()
+#22 {main}
+REQUEST_URI=/demos/blog/index.php/post/index
+HTTP_REFERER=http://localhost/demos/blog/index.php/post/index
+---
+2013/08/27 19:49:30 [error] [exception.CDbException] could not find driver
+2013/08/27 19:49:30 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection.' in /usr/share/nginx/www/framework/db/CDbConnection.php:387
+Stack trace:
+#0 /usr/share/nginx/www/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /usr/share/nginx/www/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /usr/share/nginx/www/framework/base/CModule.php(387): CDbConnection->init()
+#3 /usr/share/nginx/www/framework/base/CApplication.php(438): CModule->getComponent('db')
+#4 /usr/share/nginx/www/framework/db/ar/CActiveRecord.php(623): CApplication->getDb()
+#5 /usr/share/nginx/www/framework/db/ar/CActiveRecord.php(2309): CActiveRecord->getDbConnection()
+#6 /usr/share/nginx/www/framework/db/ar/CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(Post))
+#7 /usr/share/nginx/www/framework/web/CActiveDataProvider.php(74): CActiveRecord::model('Post')
+#8 /usr/share/nginx/www/demos/blog/protected/controllers/PostController.php(132): CActiveDataProvider->__construct('Post', Array)
+#9 /usr/share/nginx/www/framework/web/actions/CInlineAction.php(49): PostController->actionIndex()
+#10 /usr/share/nginx/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /usr/share/nginx/www/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 /usr/share/nginx/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#13 /usr/share/nginx/www/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 /usr/share/nginx/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 /usr/share/nginx/www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 /usr/share/nginx/www/framework/web/CController.php(291): CFilterChain->run()
+#17 /usr/share/nginx/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /usr/share/nginx/www/framework/web/CWebApplication.php(282): CController->run('index')
+#19 /usr/share/nginx/www/framework/web/CWebApplication.php(141): CWebApplication->runController('post/index')
+#20 /usr/share/nginx/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#21 /usr/share/nginx/www/demos/blog/index.php(11): CApplication->run()
+#22 {main}
+REQUEST_URI=/demos/blog/index.php/post/index
+HTTP_REFERER=http://localhost/demos/blog/index.php/site/login
+---
+2013/08/27 19:55:45 [error] [exception.CDbException] could not find driver
+2013/08/27 19:55:45 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection.' in /usr/share/nginx/www/framework/db/CDbConnection.php:387
+Stack trace:
+#0 /usr/share/nginx/www/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /usr/share/nginx/www/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /usr/share/nginx/www/framework/base/CModule.php(387): CDbConnection->init()
+#3 /usr/share/nginx/www/framework/base/CApplication.php(438): CModule->getComponent('db')
+#4 /usr/share/nginx/www/framework/db/ar/CActiveRecord.php(623): CApplication->getDb()
+#5 /usr/share/nginx/www/framework/db/ar/CActiveRecord.php(2309): CActiveRecord->getDbConnection()
+#6 /usr/share/nginx/www/framework/db/ar/CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(Post))
+#7 /usr/share/nginx/www/framework/web/CActiveDataProvider.php(74): CActiveRecord::model('Post')
+#8 /usr/share/nginx/www/blog/protected/controllers/PostController.php(132): CActiveDataProvider->__construct('Post', Array)
+#9 /usr/share/nginx/www/framework/web/actions/CInlineAction.php(49): PostController->actionIndex()
+#10 /usr/share/nginx/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /usr/share/nginx/www/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 /usr/share/nginx/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#13 /usr/share/nginx/www/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 /usr/share/nginx/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 /usr/share/nginx/www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 /usr/share/nginx/www/framework/web/CController.php(291): CFilterChain->run()
+#17 /usr/share/nginx/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /usr/share/nginx/www/framework/web/CWebApplication.php(282): CController->run('')
+#19 /usr/share/nginx/www/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#20 /usr/share/nginx/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#21 /usr/share/nginx/www/blog/index.php(11): CApplication->run()
+#22 {main}
+REQUEST_URI=/blog/
+---
+2013/08/27 20:30:23 [error] [exception.CDbException] could not find driver
+2013/08/27 20:30:23 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection.' in /usr/share/nginx/www/framework/db/CDbConnection.php:387
+Stack trace:
+#0 /usr/share/nginx/www/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /usr/share/nginx/www/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /usr/share/nginx/www/framework/base/CModule.php(387): CDbConnection->init()
+#3 /usr/share/nginx/www/framework/base/CApplication.php(438): CModule->getComponent('db')
+#4 /usr/share/nginx/www/framework/db/ar/CActiveRecord.php(623): CApplication->getDb()
+#5 /usr/share/nginx/www/framework/db/ar/CActiveRecord.php(2309): CActiveRecord->getDbConnection()
+#6 /usr/share/nginx/www/framework/db/ar/CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(Post))
+#7 /usr/share/nginx/www/framework/web/CActiveDataProvider.php(74): CActiveRecord::model('Post')
+#8 /usr/share/nginx/www/blog/protected/controllers/PostController.php(132): CActiveDataProvider->__construct('Post', Array)
+#9 /usr/share/nginx/www/framework/web/actions/CInlineAction.php(49): PostController->actionIndex()
+#10 /usr/share/nginx/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /usr/share/nginx/www/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 /usr/share/nginx/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#13 /usr/share/nginx/www/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 /usr/share/nginx/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 /usr/share/nginx/www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 /usr/share/nginx/www/framework/web/CController.php(291): CFilterChain->run()
+#17 /usr/share/nginx/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /usr/share/nginx/www/framework/web/CWebApplication.php(282): CController->run('')
+#19 /usr/share/nginx/www/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#20 /usr/share/nginx/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#21 /usr/share/nginx/www/blog/index.php(11): CApplication->run()
+#22 {main}
+REQUEST_URI=/blog/
+---
+2013/08/27 20:30:37 [error] [exception.CDbException] could not find driver
+2013/08/27 20:30:37 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection.' in /usr/share/nginx/www/framework/db/CDbConnection.php:387
+Stack trace:
+#0 /usr/share/nginx/www/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /usr/share/nginx/www/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /usr/share/nginx/www/framework/base/CModule.php(387): CDbConnection->init()
+#3 /usr/share/nginx/www/framework/base/CApplication.php(438): CModule->getComponent('db')
+#4 /usr/share/nginx/www/framework/db/ar/CActiveRecord.php(623): CApplication->getDb()
+#5 /usr/share/nginx/www/framework/db/ar/CActiveRecord.php(2309): CActiveRecord->getDbConnection()
+#6 /usr/share/nginx/www/framework/db/ar/CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(Post))
+#7 /usr/share/nginx/www/framework/web/CActiveDataProvider.php(74): CActiveRecord::model('Post')
+#8 /usr/share/nginx/www/blog/protected/controllers/PostController.php(132): CActiveDataProvider->__construct('Post', Array)
+#9 /usr/share/nginx/www/framework/web/actions/CInlineAction.php(49): PostController->actionIndex()
+#10 /usr/share/nginx/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /usr/share/nginx/www/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 /usr/share/nginx/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#13 /usr/share/nginx/www/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 /usr/share/nginx/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 /usr/share/nginx/www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 /usr/share/nginx/www/framework/web/CController.php(291): CFilterChain->run()
+#17 /usr/share/nginx/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /usr/share/nginx/www/framework/web/CWebApplication.php(282): CController->run('')
+#19 /usr/share/nginx/www/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#20 /usr/share/nginx/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#21 /usr/share/nginx/www/blog/index.php(11): CApplication->run()
+#22 {main}
+REQUEST_URI=/blog/
+---
+2013/08/27 20:37:11 [error] [exception.CDbException] could not find driver
+2013/08/27 20:37:11 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection.' in /usr/share/nginx/www/framework/db/CDbConnection.php:387
+Stack trace:
+#0 /usr/share/nginx/www/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /usr/share/nginx/www/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /usr/share/nginx/www/framework/base/CModule.php(387): CDbConnection->init()
+#3 /usr/share/nginx/www/framework/base/CApplication.php(438): CModule->getComponent('db')
+#4 /usr/share/nginx/www/framework/db/ar/CActiveRecord.php(623): CApplication->getDb()
+#5 /usr/share/nginx/www/framework/db/ar/CActiveRecord.php(2309): CActiveRecord->getDbConnection()
+#6 /usr/share/nginx/www/framework/db/ar/CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(Post))
+#7 /usr/share/nginx/www/framework/web/CActiveDataProvider.php(74): CActiveRecord::model('Post')
+#8 /usr/share/nginx/www/blog/protected/controllers/PostController.php(132): CActiveDataProvider->__construct('Post', Array)
+#9 /usr/share/nginx/www/framework/web/actions/CInlineAction.php(49): PostController->actionIndex()
+#10 /usr/share/nginx/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /usr/share/nginx/www/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 /usr/share/nginx/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#13 /usr/share/nginx/www/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 /usr/share/nginx/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 /usr/share/nginx/www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 /usr/share/nginx/www/framework/web/CController.php(291): CFilterChain->run()
+#17 /usr/share/nginx/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /usr/share/nginx/www/framework/web/CWebApplication.php(282): CController->run('')
+#19 /usr/share/nginx/www/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#20 /usr/share/nginx/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#21 /usr/share/nginx/www/blog/index.php(11): CApplication->run()
+#22 {main}
+REQUEST_URI=/blog/
+---
+2013/08/27 20:37:13 [error] [exception.CDbException] could not find driver
+2013/08/27 20:37:13 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection.' in /usr/share/nginx/www/framework/db/CDbConnection.php:387
+Stack trace:
+#0 /usr/share/nginx/www/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /usr/share/nginx/www/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /usr/share/nginx/www/framework/base/CModule.php(387): CDbConnection->init()
+#3 /usr/share/nginx/www/framework/base/CApplication.php(438): CModule->getComponent('db')
+#4 /usr/share/nginx/www/framework/db/ar/CActiveRecord.php(623): CApplication->getDb()
+#5 /usr/share/nginx/www/framework/db/ar/CActiveRecord.php(2309): CActiveRecord->getDbConnection()
+#6 /usr/share/nginx/www/framework/db/ar/CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(Post))
+#7 /usr/share/nginx/www/framework/web/CActiveDataProvider.php(74): CActiveRecord::model('Post')
+#8 /usr/share/nginx/www/blog/protected/controllers/PostController.php(132): CActiveDataProvider->__construct('Post', Array)
+#9 /usr/share/nginx/www/framework/web/actions/CInlineAction.php(49): PostController->actionIndex()
+#10 /usr/share/nginx/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /usr/share/nginx/www/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 /usr/share/nginx/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#13 /usr/share/nginx/www/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 /usr/share/nginx/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 /usr/share/nginx/www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 /usr/share/nginx/www/framework/web/CController.php(291): CFilterChain->run()
+#17 /usr/share/nginx/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /usr/share/nginx/www/framework/web/CWebApplication.php(282): CController->run('')
+#19 /usr/share/nginx/www/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#20 /usr/share/nginx/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#21 /usr/share/nginx/www/blog/index.php(11): CApplication->run()
+#22 {main}
+REQUEST_URI=/blog/index.php/site/page?view=about
+HTTP_REFERER=http://localhost/blog/
+---
+2013/08/27 20:37:21 [error] [exception.CDbException] could not find driver
+2013/08/27 20:37:21 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection.' in /usr/share/nginx/www/framework/db/CDbConnection.php:387
+Stack trace:
+#0 /usr/share/nginx/www/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /usr/share/nginx/www/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /usr/share/nginx/www/framework/base/CModule.php(387): CDbConnection->init()
+#3 /usr/share/nginx/www/framework/base/CApplication.php(438): CModule->getComponent('db')
+#4 /usr/share/nginx/www/framework/db/ar/CActiveRecord.php(623): CApplication->getDb()
+#5 /usr/share/nginx/www/framework/db/ar/CActiveRecord.php(2309): CActiveRecord->getDbConnection()
+#6 /usr/share/nginx/www/framework/db/ar/CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(Post))
+#7 /usr/share/nginx/www/framework/web/CActiveDataProvider.php(74): CActiveRecord::model('Post')
+#8 /usr/share/nginx/www/blog/protected/controllers/PostController.php(132): CActiveDataProvider->__construct('Post', Array)
+#9 /usr/share/nginx/www/framework/web/actions/CInlineAction.php(49): PostController->actionIndex()
+#10 /usr/share/nginx/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /usr/share/nginx/www/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 /usr/share/nginx/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#13 /usr/share/nginx/www/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 /usr/share/nginx/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 /usr/share/nginx/www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 /usr/share/nginx/www/framework/web/CController.php(291): CFilterChain->run()
+#17 /usr/share/nginx/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /usr/share/nginx/www/framework/web/CWebApplication.php(282): CController->run('')
+#19 /usr/share/nginx/www/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#20 /usr/share/nginx/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#21 /usr/share/nginx/www/blog/index.php(11): CApplication->run()
+#22 {main}
+REQUEST_URI=/blog/index.php/site/login
+HTTP_REFERER=http://localhost/blog/
+---
+2013/08/27 20:37:29 [error] [exception.CDbException] could not find driver
+2013/08/27 20:37:29 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection.' in /usr/share/nginx/www/framework/db/CDbConnection.php:387
+Stack trace:
+#0 /usr/share/nginx/www/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /usr/share/nginx/www/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /usr/share/nginx/www/framework/base/CModule.php(387): CDbConnection->init()
+#3 /usr/share/nginx/www/framework/base/CApplication.php(438): CModule->getComponent('db')
+#4 /usr/share/nginx/www/framework/db/ar/CActiveRecord.php(623): CApplication->getDb()
+#5 /usr/share/nginx/www/framework/db/ar/CActiveRecord.php(2309): CActiveRecord->getDbConnection()
+#6 /usr/share/nginx/www/framework/db/ar/CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(Post))
+#7 /usr/share/nginx/www/framework/web/CActiveDataProvider.php(74): CActiveRecord::model('Post')
+#8 /usr/share/nginx/www/blog/protected/controllers/PostController.php(132): CActiveDataProvider->__construct('Post', Array)
+#9 /usr/share/nginx/www/framework/web/actions/CInlineAction.php(49): PostController->actionIndex()
+#10 /usr/share/nginx/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /usr/share/nginx/www/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 /usr/share/nginx/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#13 /usr/share/nginx/www/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 /usr/share/nginx/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 /usr/share/nginx/www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 /usr/share/nginx/www/framework/web/CController.php(291): CFilterChain->run()
+#17 /usr/share/nginx/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /usr/share/nginx/www/framework/web/CWebApplication.php(282): CController->run('')
+#19 /usr/share/nginx/www/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#20 /usr/share/nginx/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#21 /usr/share/nginx/www/blog/index.php(11): CApplication->run()
+#22 {main}
+REQUEST_URI=/blog/index.php/site/page?view=about
+HTTP_REFERER=http://localhost/blog/
+---
+2013/08/27 20:37:45 [error] [exception.CDbException] could not find driver
+2013/08/27 20:37:45 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection.' in /usr/share/nginx/www/framework/db/CDbConnection.php:387
+Stack trace:
+#0 /usr/share/nginx/www/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /usr/share/nginx/www/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /usr/share/nginx/www/framework/base/CModule.php(387): CDbConnection->init()
+#3 /usr/share/nginx/www/framework/base/CApplication.php(438): CModule->getComponent('db')
+#4 /usr/share/nginx/www/framework/db/ar/CActiveRecord.php(623): CApplication->getDb()
+#5 /usr/share/nginx/www/framework/db/ar/CActiveRecord.php(2309): CActiveRecord->getDbConnection()
+#6 /usr/share/nginx/www/framework/db/ar/CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(Post))
+#7 /usr/share/nginx/www/framework/web/CActiveDataProvider.php(74): CActiveRecord::model('Post')
+#8 /usr/share/nginx/www/blog/protected/controllers/PostController.php(132): CActiveDataProvider->__construct('Post', Array)
+#9 /usr/share/nginx/www/framework/web/actions/CInlineAction.php(49): PostController->actionIndex()
+#10 /usr/share/nginx/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /usr/share/nginx/www/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 /usr/share/nginx/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#13 /usr/share/nginx/www/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 /usr/share/nginx/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 /usr/share/nginx/www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 /usr/share/nginx/www/framework/web/CController.php(291): CFilterChain->run()
+#17 /usr/share/nginx/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /usr/share/nginx/www/framework/web/CWebApplication.php(282): CController->run('')
+#19 /usr/share/nginx/www/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#20 /usr/share/nginx/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#21 /usr/share/nginx/www/blog/index.php(11): CApplication->run()
+#22 {main}
+REQUEST_URI=/blog/index.php/post/index
+HTTP_REFERER=http://localhost/blog/
+---
+2013/08/27 20:38:23 [error] [exception.CDbException] could not find driver
+2013/08/27 20:38:23 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection.' in /usr/share/nginx/www/framework/db/CDbConnection.php:387
+Stack trace:
+#0 /usr/share/nginx/www/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /usr/share/nginx/www/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /usr/share/nginx/www/framework/base/CModule.php(387): CDbConnection->init()
+#3 /usr/share/nginx/www/framework/base/CApplication.php(438): CModule->getComponent('db')
+#4 /usr/share/nginx/www/framework/db/ar/CActiveRecord.php(623): CApplication->getDb()
+#5 /usr/share/nginx/www/framework/db/ar/CActiveRecord.php(2309): CActiveRecord->getDbConnection()
+#6 /usr/share/nginx/www/framework/db/ar/CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(Post))
+#7 /usr/share/nginx/www/framework/web/CActiveDataProvider.php(74): CActiveRecord::model('Post')
+#8 /usr/share/nginx/www/blog/protected/controllers/PostController.php(132): CActiveDataProvider->__construct('Post', Array)
+#9 /usr/share/nginx/www/framework/web/actions/CInlineAction.php(49): PostController->actionIndex()
+#10 /usr/share/nginx/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /usr/share/nginx/www/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 /usr/share/nginx/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#13 /usr/share/nginx/www/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 /usr/share/nginx/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 /usr/share/nginx/www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 /usr/share/nginx/www/framework/web/CController.php(291): CFilterChain->run()
+#17 /usr/share/nginx/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /usr/share/nginx/www/framework/web/CWebApplication.php(282): CController->run('index')
+#19 /usr/share/nginx/www/framework/web/CWebApplication.php(141): CWebApplication->runController('post/index')
+#20 /usr/share/nginx/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#21 /usr/share/nginx/www/blog/index.php(11): CApplication->run()
+#22 {main}
+REQUEST_URI=/blog/index.php/post/index
+HTTP_REFERER=http://localhost/blog/
+---
+2013/08/27 20:38:43 [error] [exception.CDbException] could not find driver
+2013/08/27 20:38:43 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection.' in /usr/share/nginx/www/framework/db/CDbConnection.php:387
+Stack trace:
+#0 /usr/share/nginx/www/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /usr/share/nginx/www/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /usr/share/nginx/www/framework/base/CModule.php(387): CDbConnection->init()
+#3 /usr/share/nginx/www/framework/base/CApplication.php(438): CModule->getComponent('db')
+#4 /usr/share/nginx/www/framework/db/ar/CActiveRecord.php(623): CApplication->getDb()
+#5 /usr/share/nginx/www/framework/db/ar/CActiveRecord.php(2309): CActiveRecord->getDbConnection()
+#6 /usr/share/nginx/www/framework/db/ar/CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(Post))
+#7 /usr/share/nginx/www/framework/web/CActiveDataProvider.php(74): CActiveRecord::model('Post')
+#8 /usr/share/nginx/www/blog/protected/controllers/PostController.php(132): CActiveDataProvider->__construct('Post', Array)
+#9 /usr/share/nginx/www/framework/web/actions/CInlineAction.php(49): PostController->actionIndex()
+#10 /usr/share/nginx/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /usr/share/nginx/www/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 /usr/share/nginx/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#13 /usr/share/nginx/www/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 /usr/share/nginx/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 /usr/share/nginx/www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 /usr/share/nginx/www/framework/web/CController.php(291): CFilterChain->run()
+#17 /usr/share/nginx/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /usr/share/nginx/www/framework/web/CWebApplication.php(282): CController->run('index')
+#19 /usr/share/nginx/www/framework/web/CWebApplication.php(141): CWebApplication->runController('post/index')
+#20 /usr/share/nginx/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#21 /usr/share/nginx/www/blog/index.php(11): CApplication->run()
+#22 {main}
+REQUEST_URI=/blog/index.php/post/index
+HTTP_REFERER=http://localhost/blog/index.php/site/login
+---
+2013/08/27 20:46:23 [error] [exception.CDbException] could not find driver
+2013/08/27 20:46:23 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection.' in /usr/share/nginx/www/framework/db/CDbConnection.php:387
+Stack trace:
+#0 /usr/share/nginx/www/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /usr/share/nginx/www/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /usr/share/nginx/www/framework/base/CModule.php(387): CDbConnection->init()
+#3 /usr/share/nginx/www/framework/base/CApplication.php(438): CModule->getComponent('db')
+#4 /usr/share/nginx/www/framework/db/ar/CActiveRecord.php(623): CApplication->getDb()
+#5 /usr/share/nginx/www/framework/db/ar/CActiveRecord.php(2309): CActiveRecord->getDbConnection()
+#6 /usr/share/nginx/www/framework/db/ar/CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(Post))
+#7 /usr/share/nginx/www/framework/web/CActiveDataProvider.php(74): CActiveRecord::model('Post')
+#8 /usr/share/nginx/www/blog/protected/controllers/PostController.php(132): CActiveDataProvider->__construct('Post', Array)
+#9 /usr/share/nginx/www/framework/web/actions/CInlineAction.php(49): PostController->actionIndex()
+#10 /usr/share/nginx/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /usr/share/nginx/www/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 /usr/share/nginx/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#13 /usr/share/nginx/www/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 /usr/share/nginx/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 /usr/share/nginx/www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 /usr/share/nginx/www/framework/web/CController.php(291): CFilterChain->run()
+#17 /usr/share/nginx/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /usr/share/nginx/www/framework/web/CWebApplication.php(282): CController->run('index')
+#19 /usr/share/nginx/www/framework/web/CWebApplication.php(141): CWebApplication->runController('post/index')
+#20 /usr/share/nginx/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#21 /usr/share/nginx/www/blog/index.php(11): CApplication->run()
+#22 {main}
+REQUEST_URI=/blog/index.php/post/index
+HTTP_REFERER=http://localhost/blog/index.php/site/login
+---
+2013/08/27 20:46:26 [error] [exception.CDbException] could not find driver
+2013/08/27 20:46:26 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection.' in /usr/share/nginx/www/framework/db/CDbConnection.php:387
+Stack trace:
+#0 /usr/share/nginx/www/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /usr/share/nginx/www/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /usr/share/nginx/www/framework/base/CModule.php(387): CDbConnection->init()
+#3 /usr/share/nginx/www/framework/base/CApplication.php(438): CModule->getComponent('db')
+#4 /usr/share/nginx/www/framework/db/ar/CActiveRecord.php(623): CApplication->getDb()
+#5 /usr/share/nginx/www/framework/db/ar/CActiveRecord.php(2309): CActiveRecord->getDbConnection()
+#6 /usr/share/nginx/www/framework/db/ar/CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(Post))
+#7 /usr/share/nginx/www/framework/web/CActiveDataProvider.php(74): CActiveRecord::model('Post')
+#8 /usr/share/nginx/www/blog/protected/controllers/PostController.php(132): CActiveDataProvider->__construct('Post', Array)
+#9 /usr/share/nginx/www/framework/web/actions/CInlineAction.php(49): PostController->actionIndex()
+#10 /usr/share/nginx/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /usr/share/nginx/www/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 /usr/share/nginx/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#13 /usr/share/nginx/www/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 /usr/share/nginx/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 /usr/share/nginx/www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 /usr/share/nginx/www/framework/web/CController.php(291): CFilterChain->run()
+#17 /usr/share/nginx/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /usr/share/nginx/www/framework/web/CWebApplication.php(282): CController->run('index')
+#19 /usr/share/nginx/www/framework/web/CWebApplication.php(141): CWebApplication->runController('post/index')
+#20 /usr/share/nginx/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#21 /usr/share/nginx/www/blog/index.php(11): CApplication->run()
+#22 {main}
+REQUEST_URI=/blog/index.php/post/index
+HTTP_REFERER=http://localhost/blog/index.php/site/login
+---
+2013/08/27 20:47:01 [error] [exception.CDbException] could not find driver
+2013/08/27 20:47:01 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection.' in /usr/share/nginx/www/framework/db/CDbConnection.php:387
+Stack trace:
+#0 /usr/share/nginx/www/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /usr/share/nginx/www/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /usr/share/nginx/www/framework/base/CModule.php(387): CDbConnection->init()
+#3 /usr/share/nginx/www/framework/base/CApplication.php(438): CModule->getComponent('db')
+#4 /usr/share/nginx/www/framework/db/ar/CActiveRecord.php(623): CApplication->getDb()
+#5 /usr/share/nginx/www/framework/db/ar/CActiveRecord.php(2309): CActiveRecord->getDbConnection()
+#6 /usr/share/nginx/www/framework/db/ar/CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(Post))
+#7 /usr/share/nginx/www/framework/web/CActiveDataProvider.php(74): CActiveRecord::model('Post')
+#8 /usr/share/nginx/www/blog/protected/controllers/PostController.php(132): CActiveDataProvider->__construct('Post', Array)
+#9 /usr/share/nginx/www/framework/web/actions/CInlineAction.php(49): PostController->actionIndex()
+#10 /usr/share/nginx/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /usr/share/nginx/www/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 /usr/share/nginx/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#13 /usr/share/nginx/www/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 /usr/share/nginx/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 /usr/share/nginx/www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 /usr/share/nginx/www/framework/web/CController.php(291): CFilterChain->run()
+#17 /usr/share/nginx/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /usr/share/nginx/www/framework/web/CWebApplication.php(282): CController->run('index')
+#19 /usr/share/nginx/www/framework/web/CWebApplication.php(141): CWebApplication->runController('post/index')
+#20 /usr/share/nginx/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#21 /usr/share/nginx/www/blog/index.php(11): CApplication->run()
+#22 {main}
+REQUEST_URI=/blog/index.php/post/index
+HTTP_REFERER=http://localhost/blog/index.php/site/login
+---
+2013/08/27 20:55:18 [error] [exception.CDbException] SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: NO)
+2013/08/27 20:55:18 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection.' in /usr/share/nginx/www/framework/db/CDbConnection.php:387
+Stack trace:
+#0 /usr/share/nginx/www/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /usr/share/nginx/www/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /usr/share/nginx/www/framework/base/CModule.php(387): CDbConnection->init()
+#3 /usr/share/nginx/www/framework/base/CApplication.php(438): CModule->getComponent('db')
+#4 /usr/share/nginx/www/framework/db/ar/CActiveRecord.php(623): CApplication->getDb()
+#5 /usr/share/nginx/www/framework/db/ar/CActiveRecord.php(2309): CActiveRecord->getDbConnection()
+#6 /usr/share/nginx/www/framework/db/ar/CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(Post))
+#7 /usr/share/nginx/www/framework/web/CActiveDataProvider.php(74): CActiveRecord::model('Post')
+#8 /usr/share/nginx/www/blog/protected/controllers/PostController.php(132): CActiveDataProvider->__construct('Post', Array)
+#9 /usr/share/nginx/www/framework/web/actions/CInlineAction.php(49): PostController->actionIndex()
+#10 /usr/share/nginx/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /usr/share/nginx/www/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 /usr/share/nginx/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#13 /usr/share/nginx/www/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 /usr/share/nginx/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 /usr/share/nginx/www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 /usr/share/nginx/www/framework/web/CController.php(291): CFilterChain->run()
+#17 /usr/share/nginx/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /usr/share/nginx/www/framework/web/CWebApplication.php(282): CController->run('index')
+#19 /usr/share/nginx/www/framework/web/CWebApplication.php(141): CWebApplication->runController('post/index')
+#20 /usr/share/nginx/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#21 /usr/share/nginx/www/blog/index.php(11): CApplication->run()
+#22 {main}
+REQUEST_URI=/blog/index.php/post/index
+HTTP_REFERER=http://localhost/blog/index.php/site/login
+---
+2013/08/27 20:55:22 [error] [exception.CDbException] SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: NO)
+2013/08/27 20:55:22 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection.' in /usr/share/nginx/www/framework/db/CDbConnection.php:387
+Stack trace:
+#0 /usr/share/nginx/www/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /usr/share/nginx/www/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /usr/share/nginx/www/framework/base/CModule.php(387): CDbConnection->init()
+#3 /usr/share/nginx/www/framework/base/CApplication.php(438): CModule->getComponent('db')
+#4 /usr/share/nginx/www/framework/db/ar/CActiveRecord.php(623): CApplication->getDb()
+#5 /usr/share/nginx/www/framework/db/ar/CActiveRecord.php(2309): CActiveRecord->getDbConnection()
+#6 /usr/share/nginx/www/framework/db/ar/CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(Post))
+#7 /usr/share/nginx/www/framework/web/CActiveDataProvider.php(74): CActiveRecord::model('Post')
+#8 /usr/share/nginx/www/blog/protected/controllers/PostController.php(132): CActiveDataProvider->__construct('Post', Array)
+#9 /usr/share/nginx/www/framework/web/actions/CInlineAction.php(49): PostController->actionIndex()
+#10 /usr/share/nginx/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /usr/share/nginx/www/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 /usr/share/nginx/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#13 /usr/share/nginx/www/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 /usr/share/nginx/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 /usr/share/nginx/www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 /usr/share/nginx/www/framework/web/CController.php(291): CFilterChain->run()
+#17 /usr/share/nginx/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /usr/share/nginx/www/framework/web/CWebApplication.php(282): CController->run('index')
+#19 /usr/share/nginx/www/framework/web/CWebApplication.php(141): CWebApplication->runController('post/index')
+#20 /usr/share/nginx/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#21 /usr/share/nginx/www/blog/index.php(11): CApplication->run()
+#22 {main}
+REQUEST_URI=/blog/index.php/post/index
+HTTP_REFERER=http://localhost/blog/index.php/site/login
+---
+2013/08/27 20:56:42 [error] [exception.CDbException] SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: NO)
+2013/08/27 20:56:42 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection.' in /usr/share/nginx/www/framework/db/CDbConnection.php:387
+Stack trace:
+#0 /usr/share/nginx/www/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /usr/share/nginx/www/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /usr/share/nginx/www/framework/base/CModule.php(387): CDbConnection->init()
+#3 /usr/share/nginx/www/framework/base/CApplication.php(438): CModule->getComponent('db')
+#4 /usr/share/nginx/www/framework/db/ar/CActiveRecord.php(623): CApplication->getDb()
+#5 /usr/share/nginx/www/framework/db/ar/CActiveRecord.php(2309): CActiveRecord->getDbConnection()
+#6 /usr/share/nginx/www/framework/db/ar/CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(Post))
+#7 /usr/share/nginx/www/framework/web/CActiveDataProvider.php(74): CActiveRecord::model('Post')
+#8 /usr/share/nginx/www/blog/protected/controllers/PostController.php(132): CActiveDataProvider->__construct('Post', Array)
+#9 /usr/share/nginx/www/framework/web/actions/CInlineAction.php(49): PostController->actionIndex()
+#10 /usr/share/nginx/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /usr/share/nginx/www/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 /usr/share/nginx/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#13 /usr/share/nginx/www/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 /usr/share/nginx/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 /usr/share/nginx/www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 /usr/share/nginx/www/framework/web/CController.php(291): CFilterChain->run()
+#17 /usr/share/nginx/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /usr/share/nginx/www/framework/web/CWebApplication.php(282): CController->run('index')
+#19 /usr/share/nginx/www/framework/web/CWebApplication.php(141): CWebApplication->runController('post/index')
+#20 /usr/share/nginx/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#21 /usr/share/nginx/www/blog/index.php(11): CApplication->run()
+#22 {main}
+REQUEST_URI=/blog/index.php/post/index
+HTTP_REFERER=http://localhost/blog/index.php/post/index
+---
+2013/08/27 20:56:43 [error] [exception.CDbException] SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: NO)
+2013/08/27 20:56:43 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection.' in /usr/share/nginx/www/framework/db/CDbConnection.php:387
+Stack trace:
+#0 /usr/share/nginx/www/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /usr/share/nginx/www/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /usr/share/nginx/www/framework/base/CModule.php(387): CDbConnection->init()
+#3 /usr/share/nginx/www/framework/base/CApplication.php(438): CModule->getComponent('db')
+#4 /usr/share/nginx/www/framework/db/ar/CActiveRecord.php(623): CApplication->getDb()
+#5 /usr/share/nginx/www/framework/db/ar/CActiveRecord.php(2309): CActiveRecord->getDbConnection()
+#6 /usr/share/nginx/www/framework/db/ar/CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(Post))
+#7 /usr/share/nginx/www/framework/web/CActiveDataProvider.php(74): CActiveRecord::model('Post')
+#8 /usr/share/nginx/www/blog/protected/controllers/PostController.php(132): CActiveDataProvider->__construct('Post', Array)
+#9 /usr/share/nginx/www/framework/web/actions/CInlineAction.php(49): PostController->actionIndex()
+#10 /usr/share/nginx/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /usr/share/nginx/www/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 /usr/share/nginx/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#13 /usr/share/nginx/www/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 /usr/share/nginx/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 /usr/share/nginx/www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 /usr/share/nginx/www/framework/web/CController.php(291): CFilterChain->run()
+#17 /usr/share/nginx/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /usr/share/nginx/www/framework/web/CWebApplication.php(282): CController->run('index')
+#19 /usr/share/nginx/www/framework/web/CWebApplication.php(141): CWebApplication->runController('post/index')
+#20 /usr/share/nginx/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#21 /usr/share/nginx/www/blog/index.php(11): CApplication->run()
+#22 {main}
+REQUEST_URI=/blog/index.php/post/index
+HTTP_REFERER=http://localhost/blog/index.php/post/index
+---
+2013/08/27 21:44:35 [error] [php] Use of undefined constant logo - assumed 'logo' (/home1/tukangba/public_html/boerweld/protected/views/layouts/main.php:25)
+Stack trace:
+#0 /home1/tukangba/framework/web/widgets/CContentDecorator.php(76): PostController->renderFile()
+#1 /home1/tukangba/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate()
+#2 /home1/tukangba/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput()
+#3 /home1/tukangba/framework/web/CBaseController.php(206): CContentDecorator->run()
+#4 /home1/tukangba/framework/web/CBaseController.php(300): PostController->endWidget()
+#5 /home1/tukangba/public_html/boerweld/protected/views/layouts/column2.php(22): PostController->endContent()
+#6 /home1/tukangba/framework/web/CBaseController.php(126): require()
+#7 /home1/tukangba/framework/web/CBaseController.php(95): PostController->renderInternal()
+#8 /home1/tukangba/framework/web/CController.php(784): PostController->renderFile()
+#9 /home1/tukangba/public_html/boerweld/protected/controllers/PostController.php(136): PostController->render()
+#10 /home1/tukangba/framework/web/actions/CInlineAction.php(49): PostController->actionIndex()
+#11 /home1/tukangba/framework/web/CController.php(308): CInlineAction->runWithParams()
+#12 /home1/tukangba/framework/web/filters/CFilterChain.php(133): PostController->runAction()
+#13 /home1/tukangba/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#14 /home1/tukangba/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#15 /home1/tukangba/framework/web/filters/CInlineFilter.php(58): PostController->filterAccessControl()
+#16 /home1/tukangba/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#17 /home1/tukangba/framework/web/CController.php(291): CFilterChain->run()
+#18 /home1/tukangba/framework/web/CController.php(265): PostController->runActionWithFilters()
+#19 /home1/tukangba/framework/web/CWebApplication.php(282): PostController->run()
+#20 /home1/tukangba/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#21 /home1/tukangba/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#22 /home1/tukangba/public_html/boerweld/index.php(11): CWebApplication->run()
+REQUEST_URI=/
+2013/08/27 22:08:57 [error] [exception.CException] exception 'CException' with message 'Property "CWebApplication.bootstrap" is not defined.' in /home1/tukangba/framework/base/CComponent.php:130
+Stack trace:
+#0 /home1/tukangba/framework/base/CModule.php(105): CComponent->__get('bootstrap')
+#1 /home1/tukangba/public_html/boerweld/protected/views/layouts/main.php(7): CModule->__get('bootstrap')
+#2 /home1/tukangba/framework/web/CBaseController.php(126): require('/home1/tukangba...')
+#3 /home1/tukangba/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home1/tukangba...', Array, true)
+#4 /home1/tukangba/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/home1/tukangba...', Array, true)
+#5 /home1/tukangba/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div class="con...')
+#6 /home1/tukangba/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div class="con...')
+#7 /home1/tukangba/framework/web/CBaseController.php(206): COutputProcessor->run()
+#8 /home1/tukangba/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#9 /home1/tukangba/public_html/boerweld/protected/views/layouts/column2.php(22): CBaseController->endContent()
+#10 /home1/tukangba/framework/web/CBaseController.php(126): require('/home1/tukangba...')
+#11 /home1/tukangba/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home1/tukangba...', Array, true)
+#12 /home1/tukangba/framework/web/CController.php(784): CBaseController->renderFile('/home1/tukangba...', Array, true)
+#13 /home1/tukangba/public_html/boerweld/protected/controllers/PostController.php(136): CController->render('index', Array)
+#14 /home1/tukangba/framework/web/actions/CInlineAction.php(49): PostController->actionIndex()
+#15 /home1/tukangba/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#16 /home1/tukangba/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#17 /home1/tukangba/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#18 /home1/tukangba/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#19 /home1/tukangba/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#20 /home1/tukangba/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#21 /home1/tukangba/framework/web/CController.php(291): CFilterChain->run()
+#22 /home1/tukangba/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 /home1/tukangba/framework/web/CWebApplication.php(282): CController->run('')
+#24 /home1/tukangba/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#25 /home1/tukangba/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#26 /home1/tukangba/public_html/boerweld/index.php(11): CApplication->run()
+#27 {main}
+REQUEST_URI=/
+---
+2013/08/27 22:12:31 [error] [exception.CException] exception 'CException' with message 'Property "CWebApplication.bootstrap" is not defined.' in /home1/tukangba/framework/base/CComponent.php:130
+Stack trace:
+#0 /home1/tukangba/framework/base/CModule.php(105): CComponent->__get('bootstrap')
+#1 /home1/tukangba/public_html/boerweld/protected/views/layouts/main.php(7): CModule->__get('bootstrap')
+#2 /home1/tukangba/framework/web/CBaseController.php(126): require('/home1/tukangba...')
+#3 /home1/tukangba/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home1/tukangba...', Array, true)
+#4 /home1/tukangba/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/home1/tukangba...', Array, true)
+#5 /home1/tukangba/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div class="con...')
+#6 /home1/tukangba/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div class="con...')
+#7 /home1/tukangba/framework/web/CBaseController.php(206): COutputProcessor->run()
+#8 /home1/tukangba/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#9 /home1/tukangba/public_html/boerweld/protected/views/layouts/column2.php(22): CBaseController->endContent()
+#10 /home1/tukangba/framework/web/CBaseController.php(126): require('/home1/tukangba...')
+#11 /home1/tukangba/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home1/tukangba...', Array, true)
+#12 /home1/tukangba/framework/web/CController.php(784): CBaseController->renderFile('/home1/tukangba...', Array, true)
+#13 /home1/tukangba/public_html/boerweld/protected/controllers/PostController.php(136): CController->render('index', Array)
+#14 /home1/tukangba/framework/web/actions/CInlineAction.php(49): PostController->actionIndex()
+#15 /home1/tukangba/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#16 /home1/tukangba/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#17 /home1/tukangba/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#18 /home1/tukangba/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#19 /home1/tukangba/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#20 /home1/tukangba/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#21 /home1/tukangba/framework/web/CController.php(291): CFilterChain->run()
+#22 /home1/tukangba/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 /home1/tukangba/framework/web/CWebApplication.php(282): CController->run('')
+#24 /home1/tukangba/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#25 /home1/tukangba/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#26 /home1/tukangba/public_html/boerweld/index.php(11): CApplication->run()
+#27 {main}
+REQUEST_URI=/
+---
+2013/08/27 22:15:20 [error] [exception.CException] exception 'CException' with message 'Property "CWebApplication.bootstrap" is not defined.' in /home1/tukangba/framework/base/CComponent.php:130
+Stack trace:
+#0 /home1/tukangba/framework/base/CModule.php(105): CComponent->__get('bootstrap')
+#1 /home1/tukangba/public_html/boerweld/protected/views/layouts/main.php(7): CModule->__get('bootstrap')
+#2 /home1/tukangba/framework/web/CBaseController.php(126): require('/home1/tukangba...')
+#3 /home1/tukangba/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home1/tukangba...', Array, true)
+#4 /home1/tukangba/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/home1/tukangba...', Array, true)
+#5 /home1/tukangba/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div class="con...')
+#6 /home1/tukangba/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div class="con...')
+#7 /home1/tukangba/framework/web/CBaseController.php(206): COutputProcessor->run()
+#8 /home1/tukangba/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#9 /home1/tukangba/public_html/boerweld/protected/views/layouts/column2.php(22): CBaseController->endContent()
+#10 /home1/tukangba/framework/web/CBaseController.php(126): require('/home1/tukangba...')
+#11 /home1/tukangba/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home1/tukangba...', Array, true)
+#12 /home1/tukangba/framework/web/CController.php(784): CBaseController->renderFile('/home1/tukangba...', Array, true)
+#13 /home1/tukangba/public_html/boerweld/protected/controllers/PostController.php(136): CController->render('index', Array)
+#14 /home1/tukangba/framework/web/actions/CInlineAction.php(49): PostController->actionIndex()
+#15 /home1/tukangba/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#16 /home1/tukangba/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#17 /home1/tukangba/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#18 /home1/tukangba/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#19 /home1/tukangba/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#20 /home1/tukangba/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#21 /home1/tukangba/framework/web/CController.php(291): CFilterChain->run()
+#22 /home1/tukangba/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 /home1/tukangba/framework/web/CWebApplication.php(282): CController->run('')
+#24 /home1/tukangba/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#25 /home1/tukangba/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#26 /home1/tukangba/public_html/boerweld/index.php(11): CApplication->run()
+#27 {main}
+REQUEST_URI=/
+---
+2013/08/27 22:24:49 [error] [exception.CException] exception 'CException' with message 'Property "CWebApplication.bootstrap" is not defined.' in /home1/tukangba/framework/base/CComponent.php:130
+Stack trace:
+#0 /home1/tukangba/framework/base/CModule.php(105): CComponent->__get('bootstrap')
+#1 /home1/tukangba/public_html/boerweld/protected/views/layouts/main.php(7): CModule->__get('bootstrap')
+#2 /home1/tukangba/framework/web/CBaseController.php(126): require('/home1/tukangba...')
+#3 /home1/tukangba/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home1/tukangba...', Array, true)
+#4 /home1/tukangba/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/home1/tukangba...', Array, true)
+#5 /home1/tukangba/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div class="con...')
+#6 /home1/tukangba/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div class="con...')
+#7 /home1/tukangba/framework/web/CBaseController.php(206): COutputProcessor->run()
+#8 /home1/tukangba/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#9 /home1/tukangba/public_html/boerweld/protected/views/layouts/column2.php(22): CBaseController->endContent()
+#10 /home1/tukangba/framework/web/CBaseController.php(126): require('/home1/tukangba...')
+#11 /home1/tukangba/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home1/tukangba...', Array, true)
+#12 /home1/tukangba/framework/web/CController.php(784): CBaseController->renderFile('/home1/tukangba...', Array, true)
+#13 /home1/tukangba/public_html/boerweld/protected/controllers/PostController.php(136): CController->render('index', Array)
+#14 /home1/tukangba/framework/web/actions/CInlineAction.php(49): PostController->actionIndex()
+#15 /home1/tukangba/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#16 /home1/tukangba/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#17 /home1/tukangba/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#18 /home1/tukangba/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#19 /home1/tukangba/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#20 /home1/tukangba/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#21 /home1/tukangba/framework/web/CController.php(291): CFilterChain->run()
+#22 /home1/tukangba/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 /home1/tukangba/framework/web/CWebApplication.php(282): CController->run('')
+#24 /home1/tukangba/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#25 /home1/tukangba/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#26 /home1/tukangba/public_html/boerweld/index.php(11): CApplication->run()
+#27 {main}
+REQUEST_URI=/
+---
+2013/08/27 22:24:52 [error] [exception.CException] exception 'CException' with message 'Property "CWebApplication.bootstrap" is not defined.' in /home1/tukangba/framework/base/CComponent.php:130
+Stack trace:
+#0 /home1/tukangba/framework/base/CModule.php(105): CComponent->__get('bootstrap')
+#1 /home1/tukangba/public_html/boerweld/protected/views/layouts/main.php(7): CModule->__get('bootstrap')
+#2 /home1/tukangba/framework/web/CBaseController.php(126): require('/home1/tukangba...')
+#3 /home1/tukangba/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home1/tukangba...', Array, true)
+#4 /home1/tukangba/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/home1/tukangba...', Array, true)
+#5 /home1/tukangba/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div class="con...')
+#6 /home1/tukangba/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div class="con...')
+#7 /home1/tukangba/framework/web/CBaseController.php(206): COutputProcessor->run()
+#8 /home1/tukangba/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#9 /home1/tukangba/public_html/boerweld/protected/views/layouts/column2.php(22): CBaseController->endContent()
+#10 /home1/tukangba/framework/web/CBaseController.php(126): require('/home1/tukangba...')
+#11 /home1/tukangba/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home1/tukangba...', Array, true)
+#12 /home1/tukangba/framework/web/CController.php(784): CBaseController->renderFile('/home1/tukangba...', Array, true)
+#13 /home1/tukangba/public_html/boerweld/protected/controllers/PostController.php(136): CController->render('index', Array)
+#14 /home1/tukangba/framework/web/actions/CInlineAction.php(49): PostController->actionIndex()
+#15 /home1/tukangba/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#16 /home1/tukangba/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#17 /home1/tukangba/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#18 /home1/tukangba/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#19 /home1/tukangba/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#20 /home1/tukangba/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#21 /home1/tukangba/framework/web/CController.php(291): CFilterChain->run()
+#22 /home1/tukangba/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 /home1/tukangba/framework/web/CWebApplication.php(282): CController->run('')
+#24 /home1/tukangba/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#25 /home1/tukangba/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#26 /home1/tukangba/public_html/boerweld/index.php(11): CApplication->run()
+#27 {main}
+REQUEST_URI=/
+---
+2013/08/27 22:25:43 [error] [exception.CException] exception 'CException' with message 'Property "CWebApplication.bootstrap" is not defined.' in /home1/tukangba/framework/base/CComponent.php:130
+Stack trace:
+#0 /home1/tukangba/framework/base/CModule.php(105): CComponent->__get('bootstrap')
+#1 /home1/tukangba/public_html/boerweld/protected/views/layouts/main.php(7): CModule->__get('bootstrap')
+#2 /home1/tukangba/framework/web/CBaseController.php(126): require('/home1/tukangba...')
+#3 /home1/tukangba/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home1/tukangba...', Array, true)
+#4 /home1/tukangba/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/home1/tukangba...', Array, true)
+#5 /home1/tukangba/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div class="con...')
+#6 /home1/tukangba/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div class="con...')
+#7 /home1/tukangba/framework/web/CBaseController.php(206): COutputProcessor->run()
+#8 /home1/tukangba/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#9 /home1/tukangba/public_html/boerweld/protected/views/layouts/column2.php(22): CBaseController->endContent()
+#10 /home1/tukangba/framework/web/CBaseController.php(126): require('/home1/tukangba...')
+#11 /home1/tukangba/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home1/tukangba...', Array, true)
+#12 /home1/tukangba/framework/web/CController.php(784): CBaseController->renderFile('/home1/tukangba...', Array, true)
+#13 /home1/tukangba/public_html/boerweld/protected/controllers/PostController.php(136): CController->render('index', Array)
+#14 /home1/tukangba/framework/web/actions/CInlineAction.php(49): PostController->actionIndex()
+#15 /home1/tukangba/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#16 /home1/tukangba/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#17 /home1/tukangba/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#18 /home1/tukangba/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#19 /home1/tukangba/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#20 /home1/tukangba/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#21 /home1/tukangba/framework/web/CController.php(291): CFilterChain->run()
+#22 /home1/tukangba/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 /home1/tukangba/framework/web/CWebApplication.php(282): CController->run('')
+#24 /home1/tukangba/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#25 /home1/tukangba/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#26 /home1/tukangba/public_html/boerweld/index.php(11): CApplication->run()
+#27 {main}
+REQUEST_URI=/
+---
+2013/08/27 22:28:24 [error] [exception.CException] exception 'CException' with message 'Property "CWebApplication.bootstrap" is not defined.' in /home1/tukangba/framework/base/CComponent.php:130
+Stack trace:
+#0 /home1/tukangba/framework/base/CModule.php(105): CComponent->__get('bootstrap')
+#1 /home1/tukangba/public_html/boerweld/protected/views/layouts/main.php(7): CModule->__get('bootstrap')
+#2 /home1/tukangba/framework/web/CBaseController.php(126): require('/home1/tukangba...')
+#3 /home1/tukangba/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home1/tukangba...', Array, true)
+#4 /home1/tukangba/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/home1/tukangba...', Array, true)
+#5 /home1/tukangba/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div class="con...')
+#6 /home1/tukangba/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div class="con...')
+#7 /home1/tukangba/framework/web/CBaseController.php(206): COutputProcessor->run()
+#8 /home1/tukangba/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#9 /home1/tukangba/public_html/boerweld/protected/views/layouts/column2.php(22): CBaseController->endContent()
+#10 /home1/tukangba/framework/web/CBaseController.php(126): require('/home1/tukangba...')
+#11 /home1/tukangba/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home1/tukangba...', Array, true)
+#12 /home1/tukangba/framework/web/CController.php(784): CBaseController->renderFile('/home1/tukangba...', Array, true)
+#13 /home1/tukangba/public_html/boerweld/protected/controllers/PostController.php(136): CController->render('index', Array)
+#14 /home1/tukangba/framework/web/actions/CInlineAction.php(49): PostController->actionIndex()
+#15 /home1/tukangba/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#16 /home1/tukangba/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#17 /home1/tukangba/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#18 /home1/tukangba/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#19 /home1/tukangba/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#20 /home1/tukangba/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#21 /home1/tukangba/framework/web/CController.php(291): CFilterChain->run()
+#22 /home1/tukangba/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 /home1/tukangba/framework/web/CWebApplication.php(282): CController->run('')
+#24 /home1/tukangba/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#25 /home1/tukangba/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#26 /home1/tukangba/public_html/boerweld/index.php(11): CApplication->run()
+#27 {main}
+REQUEST_URI=/
+---
+2013/08/27 22:30:12 [error] [exception.CException] exception 'CException' with message 'Alias "bootstrap.components.Bootstrap" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /home1/tukangba/framework/YiiBase.php:316
+Stack trace:
+#0 /home1/tukangba/framework/YiiBase.php(196): YiiBase::import('bootstrap.compo...', true)
+#1 /home1/tukangba/framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#2 /home1/tukangba/framework/base/CModule.php(523): CModule->getComponent('bootstrap')
+#3 /home1/tukangba/framework/base/CApplication.php(152): CModule->preloadComponents()
+#4 /home1/tukangba/framework/YiiBase.php(125): CApplication->__construct('/home1/tukangba...')
+#5 /home1/tukangba/framework/YiiBase.php(98): YiiBase::createApplication('CWebApplication', '/home1/tukangba...')
+#6 /home1/tukangba/public_html/boerweld/index.php(11): YiiBase::createWebApplication('/home1/tukangba...')
+#7 {main}
+REQUEST_URI=/
+---
+2013/08/27 22:33:41 [error] [exception.CException] exception 'CException' with message 'The asset "/home1/tukangba/public_html/boerweld/protected/config/../../extensions/bootstrap/assets" to be published does not exist.' in /home1/tukangba/framework/web/CAssetManager.php:257
+Stack trace:
+#0 /home1/tukangba/public_html/boerweld/protected/extensions/bootstrap/components/Bootstrap.php(306): CAssetManager->publish('/home1/tukangba...', true, -1, false)
+#1 /home1/tukangba/public_html/boerweld/protected/extensions/bootstrap/components/Bootstrap.php(50): Bootstrap->getAssetsUrl()
+#2 /home1/tukangba/public_html/boerweld/protected/extensions/bootstrap/components/Bootstrap.php(81): Bootstrap->registerCoreCss()
+#3 /home1/tukangba/public_html/boerweld/protected/views/layouts/main.php(7): Bootstrap->registerAllCss()
+#4 /home1/tukangba/framework/web/CBaseController.php(126): require('/home1/tukangba...')
+#5 /home1/tukangba/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home1/tukangba...', Array, true)
+#6 /home1/tukangba/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/home1/tukangba...', Array, true)
+#7 /home1/tukangba/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div class="con...')
+#8 /home1/tukangba/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div class="con...')
+#9 /home1/tukangba/framework/web/CBaseController.php(206): COutputProcessor->run()
+#10 /home1/tukangba/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#11 /home1/tukangba/public_html/boerweld/protected/views/layouts/column2.php(22): CBaseController->endContent()
+#12 /home1/tukangba/framework/web/CBaseController.php(126): require('/home1/tukangba...')
+#13 /home1/tukangba/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home1/tukangba...', Array, true)
+#14 /home1/tukangba/framework/web/CController.php(784): CBaseController->renderFile('/home1/tukangba...', Array, true)
+#15 /home1/tukangba/public_html/boerweld/protected/controllers/PostController.php(136): CController->render('index', Array)
+#16 /home1/tukangba/framework/web/actions/CInlineAction.php(49): PostController->actionIndex()
+#17 /home1/tukangba/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#18 /home1/tukangba/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#19 /home1/tukangba/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#20 /home1/tukangba/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#21 /home1/tukangba/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#22 /home1/tukangba/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#23 /home1/tukangba/framework/web/CController.php(291): CFilterChain->run()
+#24 /home1/tukangba/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 /home1/tukangba/framework/web/CWebApplication.php(282): CController->run('')
+#26 /home1/tukangba/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#27 /home1/tukangba/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#28 /home1/tukangba/public_html/boerweld/index.php(11): CApplication->run()
+#29 {main}
+REQUEST_URI=/
+---
+2013/08/27 22:38:41 [error] [exception.CException] exception 'CException' with message 'Property "Bootstrap.responsiveCss" is not defined.' in /home1/tukangba/framework/base/CComponent.php:173
+Stack trace:
+#0 /home1/tukangba/framework/YiiBase.php(220): CComponent->__set('responsiveCss', true)
+#1 /home1/tukangba/framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#2 /home1/tukangba/framework/base/CModule.php(523): CModule->getComponent('bootstrap')
+#3 /home1/tukangba/framework/base/CApplication.php(152): CModule->preloadComponents()
+#4 /home1/tukangba/framework/YiiBase.php(125): CApplication->__construct('/home1/tukangba...')
+#5 /home1/tukangba/framework/YiiBase.php(98): YiiBase::createApplication('CWebApplication', '/home1/tukangba...')
+#6 /home1/tukangba/public_html/boerweld/index.php(11): YiiBase::createWebApplication('/home1/tukangba...')
+#7 {main}
+REQUEST_URI=/
+---
