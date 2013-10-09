@@ -1,0 +1,7 @@
+[27-Aug-2013 08:38:27 America/Denver] PHP Warning:  require_once(/home1/tukangba/public_html/boerweld/../framework/yii.php): failed to open stream: No such file or directory in /home1/tukangba/public_html/boerweld/index.php on line 10
+[27-Aug-2013 08:38:27 America/Denver] PHP Fatal error:  require_once(): Failed opening required '/home1/tukangba/public_html/boerweld/../framework/yii.php' (include_path='.:/usr/php/53/usr/lib64:/usr/php/53/usr/share/pear') in /home1/tukangba/public_html/boerweld/index.php on line 10
+[27-Aug-2013 08:38:36 America/Denver] PHP Warning:  require_once(/home1/tukangba/public_html/boerweld/../framework/yii.php): failed to open stream: No such file or directory in /home1/tukangba/public_html/boerweld/index.php on line 10
+[27-Aug-2013 08:38:36 America/Denver] PHP Fatal error:  require_once(): Failed opening required '/home1/tukangba/public_html/boerweld/../framework/yii.php' (include_path='.:/usr/php/53/usr/lib64:/usr/php/53/usr/share/pear') in /home1/tukangba/public_html/boerweld/index.php on line 10
+[27-Aug-2013 18:08:42 America/Denver] PHP Fatal error:  Call to undefined function php_info() in /home1/tukangba/public_html/boerweld/info.php on line 2
+[27-Aug-2013 21:44:35 America/Denver] PHP Notice:  Use of undefined constant logo - assumed 'logo' in /home1/tukangba/public_html/boerweld/protected/views/layouts/main.php on line 25
+[27-Aug-2013 21:44:35 America/Denver] PHP Notice:  Use of undefined constant png - assumed 'png' in /home1/tukangba/public_html/boerweld/protected/views/layouts/main.php on line 25
