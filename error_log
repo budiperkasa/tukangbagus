@@ -1,0 +1,10 @@
+[11-Jul-2013 23:20:18 America/Denver] PHP Notice:  Undefined variable: span_sidebar3 in /home1/tukangba/public_html/templates/bt_metro/blocks/home1.php on line 60
+[11-Jul-2013 23:22:04 America/Denver] PHP Notice:  Undefined variable: span_sidebar3 in /home1/tukangba/public_html/templates/bt_metro/blocks/home1.php on line 49
+[11-Jul-2013 23:29:44 America/Denver] PHP Notice:  Undefined variable: span_sidebar3 in /home1/tukangba/public_html/templates/bt_metro/blocks/home1.php on line 51
+[20-Aug-2013 13:48:55 America/Denver] PHP Notice:  Undefined index: HTTP_USER_AGENT in /home1/tukangba/public_html/plugins/system/jvcounter/jvcounter.php on line 88
+[15-Sep-2013 21:08:43 America/Denver] PHP Fatal error:  Call to undefined function infophp() in /home1/tukangba/public_html/info.php on line 2
+[15-Sep-2013 21:08:53 America/Denver] PHP Fatal error:  Call to undefined function infophp() in /home1/tukangba/public_html/info.php on line 2
+[15-Sep-2013 21:49:24 America/Denver] PHP Notice:  Undefined index: HTTP_USER_AGENT in /home1/tukangba/public_html/plugins/system/jvcounter/jvcounter.php on line 88
+[19-Sep-2013 20:01:41 America/Denver] PHP Notice:  Undefined index: HTTP_USER_AGENT in /home1/tukangba/public_html/plugins/system/jvcounter/jvcounter.php on line 88
+[23-Sep-2013 17:22:17 America/Denver] PHP Notice:  Undefined index: HTTP_USER_AGENT in /home1/tukangba/public_html/plugins/system/jvcounter/jvcounter.php on line 88
+[08-Oct-2013 18:01:46 America/Denver] PHP Notice:  Undefined index: HTTP_USER_AGENT in /home1/tukangba/public_html/plugins/system/jvcounter/jvcounter.php on line 88
