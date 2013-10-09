@@ -1,0 +1,267 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<!-- Mirrored from www.hobartwelders.com/service/registration/step1.php by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 27 Aug 2013 04:59:21 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>Hobart Welders - Product Registration - Step 1</title>
+	<link rel="stylesheet" href="../../includes/master.css" type="text/css" charset="utf-8" />
+	<!--[if lt IE 7]><link rel="stylesheet" type="text/css" href="/includes/ie6/master.css" /><![endif]-->
+		<script type="text/javascript" charset="utf-8" src="../../includes/mootools.js"></script>
+	<script type="text/javascript" charset="utf-8" src="../../includes/master.js"></script>
+		<script type="text/javascript">
+	  function check() {
+
+	    var sn = document.f1.serial_nbr.value;
+
+	    if (sn.length != 8 && sn.length != 9) {
+	      alert("Serial Numbers must be 8 or 9 characters in length.");
+		  return false;
+	    } 
+
+		  // First two characters must be capital letters
+		var firstChar = sn.charCodeAt(0);
+	    var secondChar = sn.charCodeAt(1);
+
+		if(!validateNotEmpty( document.f1.pur_date.value )) {
+		   alert("Please enter a date in MM/DD/YYYY format.");
+		  return false;
+		}
+
+		if(!validateUSDate(document.f1.pur_date.value)) {
+		  alert("Please enter a date in MM/DD/YYYY format.");
+		  return false;
+		}
+
+		if(!validateNotEmpty( document.f1.pur_price.value )) {
+		   alert("Please enter a purchase price.");
+		  return false;
+		}
+
+		document.f1.pur_price.value = removeCurrency(document.f1.pur_price.value);
+	  }
+
+	  function keytest(evt) {
+			evt = (evt) ? evt : ((event) ? event : null);
+			if (evt) {
+				if(evt.keyCode == 13) {
+				  if (evt.preventDefault) {
+				    evt.preventDefault();
+					return false;
+				  } else {
+				    evt.keyCode = 0;
+					evt.returnValue = false;
+				  }
+				}
+			} 
+		}
+
+		if (navigator.appName=="Netscape") {
+		  document.addEventListener("keypress", keytest, true);
+		}
+
+		document.onkeydown = keytest;
+	</script>
+</head>
+<body>
+	<div id="wrap">
+			<script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script> 
+    <div id="header">
+		<h1><a href="../../index.html"><span>Hobart Welders</span></a></h1>
+		<div id="mainnav">
+			<a id="navProducts" href="../../products/index.html" rel="dropnavProducts"><span>Products</span></a> <br />
+			<a id="navWTB" href="../../wheretobuy/index.html" rel="dropnavWhereToBuy"><span>Where to Buy</span></a> <br />
+			<a id="navService" href="../index.html" rel="dropnavService"><span>Service &amp; Support</span></a> <br />
+			<a id="navELearning" href="../../elearning/index.html"><span>e-Learning</span></a> <br />
+			<a id="navWeldTalk" href="../../weldtalk/index.html"><span>Weld Talk</span></a>
+			<div id="dropnavProducts" class="dropnav">
+				<div class="dropnavarrow"></div>
+				<div class="dropnavcontent">
+					<table border="0" cellspacing="0" cellpadding="0">
+						<tr>
+							<td>
+								<h3 class="nom">Welding Equipment:</h3>
+								<a id="dnWireFeed" href="../../products/wirefeed/index.html">Wire Feed Welders</a> 
+								<a id="dnSpoolGuns" href="../../products/wirefeed/spoolguns/index.html">Spool Guns</a> 
+								<a id="dnGenerators" href="../../products/generators/index.html">Welder/Generator</a>
+								<a id="dnTIG" href="../../products/tig/index.html">TIG Welders</a> 
+								<a id="dnStick" href="../../products/stick/index.html">Stick Welders</a> 
+								<a id="dnBattery" href="../../products/battery-powered/index.html">Battery-Powered</a> 
+							</td>
+							<td>
+								<h3 class="nom">Cutting Products:</h3>
+								<a id="dnPlasma" href="../../products/plasma/index.html">Plasma Cutters</a> 
+								<a id="dnOxyfuel" href="../../products/oxyfuel/index.html">Oxy-Acetylene / Propane</a>
+								<a id="dnHelmets" href="../../products/welding-helmets/index.html">Welding Helmets</a>
+								<a id="dnElecWire" href="../../products/electrodes-wire/index.html">Stick Electrodes &amp; Welding Wire</a>
+							</td>
+							<td class="tdlast">
+								<a id="dnAccessories" href="../../products/accessories/index.html">Accessories:</a>
+								<a href="../../products/accessories/wire-welding/index.html">Wire Welding Accessories</a> 
+								<a href="../../products/accessories/stick/index.html">Stick Welding Accessories</a> 
+								<a href="../../products/accessories/plasma/index.html">Plasma Cutting Accessories</a>
+								<a href="../../products/accessories/tools/index.html">Tools</a> 
+								<a href="../../products/accessories/cables-connectors/index.html">Cables &amp; Connectors</a> 
+								<a href="../../products/accessories/oxyfuel/index.html">Oxy-Fuel Accessories</a>
+								<a href="../../products/accessories/welding-gear/index.html">Safety Gear</a>
+								<a href="../../products/accessories/value-packs/index.html">Value Packs</a>
+								<a href="../../products/accessories/abrasives/index.html">Abrasives</a>
+								<a href="../../products/accessories/propane/index.html">Oxy/Fuel Tips</a>
+                                <a href="../../products/accessories/generators/index.html">Welder/Generator Accessories</a>
+							</td>
+						</tr>
+					</table>						
+				</div>
+			</div>
+            <div id="dropnavWhereToBuy" class="dropnav" style="">
+                <div class="dropnavarrow"></div>
+                <div class="dropnavcontent">
+                    <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                        <tr>
+                            <td onmouseout="this.className='';" onmouseover="this.className='graytd';" id="" width="20%"> 
+                                
+                                <a id="" style="padding: 5px; font-size:12px;" href="../../wheretobuy/index94e2.html?type=accessories">
+                                    <img src="../../wheretobuy/images/navAccessories.png" alt="Where To Buy Welding Accessories" align="middle" class="imgpadding">
+                                    <div style="font-weight: bold;padding-top:3px;padding-bottom:3px;" >Accessories & Equipment</div>
+                                    <font style="color: #000; cursor: pointer;">Find a wide variety of Hobart products at these retail locations.
+</font>
+                                </a>
+                                
+                            </td>
+                            <td onmouseout="this.className='';" onmouseover="this.className='graytd';" id="" width="20%"> 
+                                
+                                <a id="" style="padding: 5px; font-size:12px;" href="../../wheretobuy/index4890.html?type=weldingdestination">
+                                    <img src="../../wheretobuy/images/navWelding.png" alt="Hobart Welding Destination" align="middle" class="imgpadding">
+                                    <div style="font-weight: bold ;padding-top:3px;padding-bottom:3px;">Welding Destination</div>
+                                    <font style="color: #000; cursor: pointer;">Dedicated Hobart partners that carry our full line of welding equipment & accessories.</font>
+                                </a>
+                                
+                            </td>                            
+                            <td onmouseout="this.className='';" onmouseover="this.className='graytd';" id="" width="20%"> 
+                                
+                                <a id="" style="padding: 5px; font-size:12px;" href="../../wheretobuy/index3dad.html?type=equipment">
+                                    <img src="../../wheretobuy/images/navEquipment.png" alt="Where To Buy Hobart Equipment" align="middle" class="imgpadding">
+                                    <div style="font-weight: bold;padding-top:3px;padding-bottom:3px;">Equipment Only</div>
+                                    <font style="color: #000; cursor: pointer;">Knowledgeble welding distributors who can help you select the right Hobart equipment.</font>
+                                </a>
+                                
+                            </td>
+                            <td onmouseout="this.className='';" onmouseover="this.className='graytd';" id=""  width="20%">
+                                
+                                <a id="" style="padding: 5px; font-size:12px;" href="../../wheretobuy/indexd7d3.html?type=online">
+                                        <img src="../../wheretobuy/images/navOnline.png" alt="Hobart Online Retailers" align="middle" class="imgpadding">
+                                        <div style="font-weight: bold;padding-top:3px;padding-bottom:3px;">Online Retailer</div>
+                                        <font style="color: #000; cursor: pointer;">Hobart products delivered right to your door!</font>
+                                </a> 
+                            </td>
+                             <td onmouseout="this.className='tdlast';" onmouseover="this.className='tdlast graytd';" id=""  width="20%">
+                                
+                                <a id="" style="padding: 5px; font-size:12px;" href="../../wheretobuy/index1b02.html?type=service">
+                                        <img src="../../wheretobuy/images/navService.png" alt="Hobart Service Providers" align="middle" class="imgpadding">
+                                        <div style="font-weight: bold;padding-top:3px;padding-bottom:3px;">Service</div>
+                                        <font style="color: #000; cursor: pointer;">Hobart's service network providing warranty service & genuine replacement parts.</font>
+                                </a> 
+                            </td>
+                        </tr>
+                    </table> 
+                </div>
+            </div>
+			<div id="dropnavService" class="dropnav">
+				<div class="dropnavarrow"></div>
+				<div class="dropnavcontent">
+					<a href="../../wheretobuy/index1b02.html?type=service">Service Locator</a> 
+					<a href="index.html">Product Registration</a> 
+					<a href="../owners-manuals/index.html">Owner's Manuals</a> 
+					<a href="../orderlit.html">Product Literature</a>
+					<a href="../warranty/index.html">Warranty</a> 
+					<a href="../msds/index.html">MSDS</a> 
+					<a href="../welding-links/index.html">Welding Links</a> 
+				</div>
+			</div>
+		</div>
+		<div id="sitesearch">
+			<form action="http://www.hobartwelders.com/search/" method="get" accept-charset="utf-8">
+				<span>Site Search</span>
+				<input type="text" name="q" value="" id="sitesearchquery" />
+				<input type="image" src="../../images/go.png" value="Go" id="reggo" />
+				<input type="image" src="../../images/slim-go.png" value="Go" id="slimgo" />
+			</form>
+		</div>
+	</div>
+	<div id="printableHeader">
+		<img src="../../images/hobart.png" alt="Hobart Welders" width="169" height="41" />
+	</div>		<div id="subheader">
+			<div id="subheaderrt">
+				<a href="../../termsofuse.html">Terms of Use</a> | 
+<a href="../../privacy.html">Privacy Policy</a> | 
+<a href="../../about/index.html">About Us</a> | 
+<a href="../../contact/index.html">Contact Us</a>			</div>
+			<div id="crumbs">
+				<a href="../../index.html">Home</a> &raquo; 
+				<a href="../index.html">Service &amp; Support</a> &raquo; 
+				<a href="index.html">Product Registration</a> &raquo; 
+				Step 1
+			</div>
+		</div>
+		<div id="main">
+			<h2>Hobart Equipment Product Warranty Registration: Step 1</h2>
+			<form action="http://www.hobartwelders.com/service/registration/step2.php" name="f1" method="post" class="wrapper" onsubmit="return check();">
+			  <input type="hidden" name="session_id" value="2c4df515cd8eb70598b9515b">
+			  <p>
+			    <span style="color: red">Product Serial Number</span>: <input type="text" name="serial_nbr" value=""> <em>Ex. LB123456  or  LB123456L  check your machine for exact number</em>
+			  </p>
+			  <p>
+			    <span style="color: red">Purchase Date</span>: <input type="text" name="pur_date" value=""> <em>MM/DD/YYYY</em>
+			  </p>
+			  <p>
+			    <span style="color: red">Purchase Price</span>: $<input type="text" name="pur_price" value="">
+			  </p>
+			  <p><input type="submit" name="submit" value="Proceed to Step 2"></p>
+			</form>
+			<h3>Step 1 of 5</h3>
+		</div>
+						<div id="footer">
+		    		        <img class="warrantyicon" src="../../images/531warranty.png" alt="Hobart 5/3/1 Industrial Warranty" />
+		        
+		    			<a href="../../products/index.html">Welding Products</a> | <a href="../../products/wirefeed/index.html">Wire Feed Welders</a> | <a href="../../products/tig/index.html">TIG</a> | <a href="../../products/stick/index.html">Stick Welders</a> | <a href="../../products/generators/index.html">Generator/Welders</a> | <a href="../../products/plasma/index.html">Plasma Cutters</a> | <a href="../../products/oxyfuel/index.html">Oxy-Acetylene / Propane</a> | <a href="../../products/welding-helmets/index.html">Welding Helmets</a><br />
+			<a href="../../products/electrodes-wire/index.html">Filler Metals</a> | <a href="../../products/accessories/index.html">Accessories</a> | <a href="../owners-manuals/index.html">Owner's Manuals</a> | <a href="../../wheretobuy/index2595.html?svc=service">Service Locator</a> | <a href="../warranty/index.html">Warranty</a> | <a href="index.html">Product Registration</a> | <a href="../../elearning/index.html">E-Learning</a> | <a href="../welding-links/index.html">Welding Links</a> | <a href="../msds/index.html">MSDS</a> | <a href="../../contact/index.html">Contact Us</a><br />
+			<a href="../orderlit.html">Order Literature</a> | <a href="../../privacy.html">Privacy Policy</a> | <a href="../../termsofuse.html">Terms of Use</a> | <a href="../../about/termsofsale.html">Terms &amp; Conditions of Sale</a> | <a href="../../about/reconditioned.html">Reconditioned Warranty</a> | <a href="../../sitemap.html">Site Map</a>
+	        
+		</div>
+		<div id="copyright">
+        	<div id="copyright-main">
+            <img src="../../images/hobart-brothers.png" alt="Hobart Brothers Co.">
+			<br><br>
+            &copy;2013 Hobart Welders
+            </div>
+            
+		    <div id="copyright-social">
+            <img src="../../images/get_connected.jpg" />
+		    <a href="http://www.facebook.com/HobartWelding"><img src="../../images/fb_icon.jpg" alt="Hobart Facebook" /></a>
+		    <a href="http://twitter.com/hobartwelders"><img src="../../images/tw_icon.jpg" alt="Hobart Twitter" /></a>
+		    <a href="http://www.youtube.com/user/HobartWelders"><img src="../../images/yt_icon.jpg"  alt="Hobart YouTube"/></a>
+		    <a href="http://blog.hobartwelders.com/"><img src="../../images/bg_icon.jpg" alt="Hobart Blog" /></a>
+            </div>
+		</div>
+		<!-- Start Alexa Certify Javascript -->
+<script type="text/javascript" src="../../../d31qbv1cthcecs.cloudfront.net/atrk.js"></script>
+<script type="text/javascript">_atrk_opts = { atrk_acct: "kFGBf1a0mz00i3", domain:"hobartwelders.com"}; atrk ();</script>
+<noscript><img src="../../../d5nxst8fruw4z.cloudfront.net/atrk59ca.gif?account=kFGBf1a0mz00i3" style="display:none" height="1" width="1" alt="" /></noscript>
+<!-- End Alexa Certify Javascript -->
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-321856-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>	</div>
+</body>
+
+<!-- Mirrored from www.hobartwelders.com/service/registration/step1.php by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 27 Aug 2013 04:59:21 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+</html>

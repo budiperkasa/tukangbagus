@@ -1,0 +1,60 @@
+body {
+	background: white none !important;
+}
+#header,
+#subheader,
+#printmelink,
+#footer,
+#copyright,
+#printinfo,
+.noprint {
+	display: none;
+}
+
+#printableHeader {
+	/*background: white;*/
+	display: block;
+}
+
+#main {
+	background: white none !important;
+}
+
+* html #wrap {
+	zoom: 68%;
+}
+
+
+/*IE 8
+#pgAccessories #accessoriesList .accessory p, #pgAccessories #accessoriesList .last p{
+	width: 200px\9
+}
+#pgAccessories #accessoriesList .accessory {
+	width: 310px\9	
+}
+.row{
+	height: auto;	
+}*/
+/*OS*//*
+#productcontent h2 {
+	font-size: 11pt;
+}
+#productcontent h4 {
+	font-size: 9pt;
+}
+#productcontent p {
+	font-size: 9pt;
+	line-height: 1.75em;
+}
+#sidebar,
+#tabbedarea {
+	font-size: 8pt;
+}
+#pgAccessories .addthis{
+	display: none;	
+}
+*/
+.breakhere {page-break-before: always;}
+/*
+p.breakhere { margin:0;padding:0;height:1px;}
+*/

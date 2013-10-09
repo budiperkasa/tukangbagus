@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<extension type="module" version="1.6.0" client="site" method="upgrade">
+    <name>BT Slideshow Pro</name>
+    <author>Thomas</author>
+    <creationDate>August 2011</creationDate>
+    <copyright>Copyright © 2012 Bow Themes</copyright>
+    <license>http://bowthemes.com/terms-and-conditions.html</license>
+    <authorEmail>thomas@vsmarttech.com</authorEmail>
+    <authorUrl>http://bowthemes.com</authorUrl>
+    <version>2.1.2</version>
+    <description>
+        <![CDATA[
+		<style>
+			.bt_description{
+				text-align: left;
+			}
+			.bt_description h3{
+				text-transform: uppercase;
+				margin: 20px 0px 10px 0px;
+			}
+			.bt_description img{
+				float:left;
+				margin:5px 10px 5px 0px;
+			}
+			.bt_description p,.bt_description li{
+				padding: 5px 5px 5px 30px;
+				list-style: none outside none;
+			}
+
+			.bt_description ul.list-style li{
+				background:url(../modules/mod_btimagegallery/admin/images/tick.png) 0px 6px no-repeat;
+				padding-left:30px;
+				line-height:15px;
+			}
+		</style>
+		<div class="bt_description">
+			<h3>Module BT Slideshow Pro Version 2.1.2</h3>
+			<a href="http://bowthemes.com" target="_blank"><img src="../modules/mod_btslideshow_pro/admin/images/btslideshow.png"></a>
+			<p align="justify">
+                  BT Slideshow Pro is a perfect slideshow module for Joomla.
+                  It allows you to easily display images with many flash type animations done in Javascript.
+                  You can upload, import images, preview, order images from parameter module and fully configure with a lot of options.
+                  BT Slideshow Pro is compatible with all Joomla 1.5, 1.7, 2.5 and Joomla 3.0.
+			</p>
+			<br clear="both" />
+			<h3>Extension features:</h3>
+			<ul class="list-style">
+                            <li>Import images from different sources to gallery (Flickr album, Picasa Album, Joomla Folder, Phoca Gallery Component, JoomGallery component)</li>
+                            <li>Ability to upload, preview and order by drag and drop images from parameter</li>
+                            <li>Link image to  article or K2 component's item
+                            <li>Auto crop images and thumbnails</li>
+                            <li>Unlimited Image Slideshow</li>
+                            <li>Built-in 27 Animation Styles</li>
+                            <li>Easiness to insert images links, captions and descriptions</li>
+                            <li>Flexible to change font, size and color of title and description</li>
+                            <li>4 Styles of navigation options : Dotted, numbers, thumbnail and nothing</li>
+                            <li>Hide/Show button in control options</li>
+							<li>Support responsive template & touch screen(Androids, IOS)</li>
+                            <li>Be compatible with all Joomla 1.5, Joomla 1.7, Joomla 2.5 and Joomla 3.0</li>
+                            <li>Cross Browser Support: IE7+, Firefox 2+, Safari 3+, Chrome 8+, Opera 9+</li>
+                            <li><a href="http://www.youtube.com/watch?v=ItmKj2Zu448">Video tutorial</a> and <a href="http://bowthemes.com/forums/19-bt-slideshow-pro/">forum support</a> provided
+			</ul>
+			<h3>Upgrade versions</h3>
+			<p>
+				Your current versions is BT Slideshow Pro 2.1.2 <a target="_blank" href="http://bowthemes.com">Find our latest versions now</a>
+			</p>
+			
+			<h3>About bow themes & copyright</h3>
+			<p>
+				Bow Themes is Professional Joomla template provider. We are focused on creating unique, attractive and clean templates without loosing flexibility and simplicity of customization
+			</p>
+			Copyright © 2012 <a target="_blank" href="http://bowthemes.com">http://bowthemes.com</a>
+
+		</div>
+	]]>
+    </description>
+    <files>
+        <filename module="mod_btslideshow_pro">mod_btslideshow_pro.php</filename>
+        <folder>admin</folder>
+        <folder>assets</folder>
+        <folder>helpers</folder>
+        <folder>images</folder>
+        <folder>language</folder>
+        <folder>tmpl</folder>
+        <filename>index.html</filename>
+        <filename>changelog.txt</filename>
+    </files>
+    <languages folder="language">
+        <language tag="en-GB">en-GB.mod_btslideshow_pro.ini</language>
+        <language tag="en-GB">en-GB.mod_btslideshow_pro.sys.ini</language>
+    </languages>
+    <config>
+        <fields name="params">
+            <fieldset name="images_manager" label="MOD_BTSLIDESHOW_FIELDSET_GALLERY_MANAGER" addfieldpath="/modules/mod_btslideshow_pro/admin/formfields">
+                <field name="warning" type="warning" label="Warning" />
+                
+                <field
+                      name="source" class="bt_control"
+                      type="list"
+                      label="MOD_BTSLIDESHOW_FIELD_SOURCE_LABEL"
+                      description="MOD_BTSLIDESHOW_FIELD_SOURCE_DESC"
+                >
+                    <option value="jfolder">Joomla Folder</option>
+                    <option value="flickr">Flickr</option>
+                    <option value="picasa">Picasa</option>
+                    <option value="jgallery">Joom Gallery</option>
+                    <option value="phocagallery">Phoca Gallery</option>
+                    <option value="upload">Uploader</option>
+                </field>
+                <field 
+                    class="btss-ac source_jfolder" 
+                    name="jfolder_path" 
+                    type="folder" 
+                    label="MOD_BTSLIDESHOW_FIELD_ALBUMCONFIG_JFOLDER_LABEL" 
+                    description = "MOD_BTSLIDESHOW_FIELD_ALBUMCONFIG_JFOLDER_DESC"
+               />
+                
+                <!-- config for flickr -->
+                <field
+                    class="btss-ac source_flickr"
+                    type="text"
+                    name="flickr_userid"
+                    size = "36"
+                    label="MOD_BTSLIDESHOW_FIELD_ALBUMCONFIG_FLICKR_USERID_LABEL"
+                    description = "MOD_BTSLIDESHOW_FIELD_ALBUMCONFIG_FLICKR_USERID_DESC"
+                />
+                <field
+                    class="btss-ac source_flickr"
+                    type="text"
+                    name="flickr_api"
+                    size = "36"
+                    label="MOD_BTSLIDESHOW_FIELD_ALBUMCONFIG_FLICKR_APIKEY_LABEL"
+                    description = "MOD_BTSLIDESHOW_FIELD_ALBUMCONFIG_FLICKR_APIKEY_DESC"
+                />
+
+                <field
+                    class="btss-ac source_flickr"
+                    type="list"
+                    name="flickr_photosetid"
+                    label="MOD_BTSLIDESHOW_FIELD_ALBUMCONFIG_FLICKR_PHOTOSETID_LABEL"
+                    description = "MOD_BTSLIDESHOW_FIELD_ALBUMCONFIG_FLICKR_PHOTOSETID_DESC"
+                >
+
+                </field>
+                <!-- end of config for flickr -->
+                <field
+                    class="btss-ac source_picasa"
+                    type="text"
+                    name="picasa_userid"
+                    size = "36"
+                    label="MOD_BTSLIDESHOW_FIELD_ALBUMCONFIG_PICASA_USERID_LABEL"
+                    description = "MOD_BTSLIDESHOW_FIELD_ALBUMCONFIG_PICASA_USERID_DESC"
+                />
+                <field
+                    class="btss-ac source_picasa"
+                    type="list"
+                    name="picasa_albumid"
+                    label="MOD_BTSLIDESHOW_FIELD_ALBUMCONFIG_PICASA_ALBUMID_LABEL"
+                    description = "MOD_BTSLIDESHOW_FIELD_ALBUMCONFIG_PICASA_ALBUMID_DESC"
+                >
+                </field>
+                <!-- end of config for picasa -->
+                <field
+                    class="btss-ac source_phocagallery"
+                    type="phocagallerycategory"
+                    name="phoca_catid"
+                    label="MOD_BTSLIDESHOW_FIELD_ALBUMCONFIG_PHOCA_CATID_LABEL"
+                    description = "MOD_BTSLIDESHOW_FIELD_ALBUMCONFIG_PHOCA_CATID_DESC"
+                >
+
+                </field>
+                <field
+                    class="btss-ac source_jgallery"
+                    type="jgallerycategory"
+                    name="jgallery_catid"
+                    label="MOD_BTSLIDESHOW_FIELD_ALBUMCONFIG_JGALLERY_CATID_LABEL"
+                    description = "MOD_BTSLIDESHOW_FIELD_ALBUMCONFIG_JGALLERY_CATID_DESC"
+                >
+                    <option value="0">MOD_BTSLIDESHOW_JGALLERY_ALL_CATEGORIES</option>
+                </field>
+                <field
+                    name= "get_limit" class="source_jgallery source_phocagallery source_picasa source_flickr source_jfolder"
+                    type= "text"
+                    default= "20"
+                    label="MOD_BTSLIDESHOW_FIELD_ALBUMCONFIG_GET_LIMIT_LABEL"
+                    description = "MOD_BTSLIDESHOW_FIELD_ALBUMCONFIG_GET_LIMIT_DESC"
+                />
+                <field
+                    type="fetchimage" class="source_jgallery source_phocagallery source_picasa source_flickr source_jfolder"
+                    name="btnFetchImage"
+                    label="Get Images"
+                    description = "MOD_BTSLIDESHOW_FIELD_FETCHIMAGE_DESC"
+                />
+                <field
+                    type="uploadify" class="source_upload"
+                    name="uploadify"
+                    label="MOD_BTSLIDESHOW_FIELD_UPLOADIFY_LABEL"
+                    description="MOD_BTSLIDESHOW_FIELD_UPLOADIFY_DESC"
+                />
+                <field name="gallery" type="gallery" default="" label="MOD_BTSLIDESHOW_FIELD_GALLERY_LABEL" description="MOD_BTSLIDESHOW_FIELD_GALLERY_DESC" />
+                <field name="deleteimages" type="deleteimages" label="Delete images"/>
+            </fieldset>
+            <fieldset name="basic" label="MOD_BTSLIDESHOW_FIELDSET_SLIDESHOW_OPTIONS">
+				<field name="module_class_suffix" type="text" size="10" label="MOD_BTSLIDESHOW_FIELD_MODULE_CLASS_SUFFIX_LABEL" description="MOD_BTSLIDESHOW_FIELD_MODULE_CLASS_SUFFIX_DESCRIPTION" />
+                <field name="width" type="text" size="9" default="727" label="MOD_BTSLIDESHOW_FIELD_WIDTH_LABEL" description="MOD_BTSLIDESHOW_FIELD_WIDTH_DESC" />
+                <field name="height" type="text" size="9" default="300" label="MOD_BTSLIDESHOW_FIELD_HEIGHT_LABEL" description="MOD_BTSLIDESHOW_FIELD_HEIGHT_DESC" />
+                <field name="jpeg_compression" type="text" size="9" default="100" label="MOD_BTSLIDESHOW_FIELD_JPEG_COMPRESSION_LABEL" description="MOD_BTSLIDESHOW_FIELD_JPEG_COMPRESSION_DESC" />
+                <field name="crop_image" class="btn-group btn-control" type="radio"
+					default="1" label="MOD_BTSLIDESHOW_FIELD_CROP_LABEL"
+					description="MOD_BTSLIDESHOW_FIELD_CROP_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="thumb_width" type="text" size="9" default="70" label="MOD_BTSLIDESHOW_FIELD_THUMB_WIDTH_LABEL" description="MOD_BTSLIDESHOW_FIELD_THUMB_WIDTH_DESC" />
+                <field name="thumb_height" type="text" size="9" default="40" label="MOD_BTSLIDESHOW_FIELD_THUMB_HEIGHT_LABEL" description="MOD_BTSLIDESHOW_FIELD_THUMB_HEIGHT_DESC" />
+                <field name="crop_thumb" class="btn-group btn-control" type="radio"
+					default="1" label="MOD_BTSLIDESHOW_FIELD_CROP_THUMB_LABEL"
+					description="MOD_BTSLIDESHOW_FIELD_CROP_THUMB_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="effect" type="list" default="random" label="MOD_BTSLIDESHOW_FIELD_EFFECT_LABEL" description="MOD_BTSLIDESHOW_FIELD_EFFECT_DESC">
+                    <option value="cube">cube</option>
+                    <option value="cubeRandom">cubeRandom</option>
+                    <option value="block">block</option>
+                    <option value="cubeStop">cubeStop</option>
+                    <option value="cubeHide">cubeHide</option>
+                    <option value="cubeSize">cubeSize</option>
+                    <option value="horizontal">horizontal</option>
+                    <option value="showBars">showBars</option>
+                    <option value="showBarsRandom">showBarsRandom</option>
+                    <option value="tube">tube</option>
+                    <option value="fade">fade</option>
+                    <option value="fadeFour">fadeFour</option>
+                    <option value="paralell">paralell</option>
+                    <option value="blind">blind</option>
+                    <option value="blindHeight">blindHeight</option>
+                    <option value="blindWidth">blindWidth</option>
+                    <option value="directionTop">directionTop</option>
+                    <option value="directionBottom">directionBottom</option>
+                    <option value="directionRight">directionRight</option>
+                    <option value="directionLeft">directionLeft</option>
+                    <option value="cubeStopRandom">cubeStopRandom</option>
+                    <option value="cubeSpread">cubeSpread</option>
+                    <option value="cubeJelly">cubeJelly</option>
+                    <option value="glassCube">glassCube</option>
+                    <option value="glassBlock">glassBlock</option>
+                    <option value="random">random</option>
+                    <option value="randomSmart">randomSmart</option>
+                    <option value="glassCube">glassCube</option>
+                    <option value="glassBlock">glassBlock</option>
+                </field>
+                <field name="time_interval" type="text" size="9" default="3500" label="MOD_BTSLIDESHOW_FIELD_TIME_INTERVAL_LABEL" description="MOD_BTSLIDESHOW_FIELD_TIME_INTERVAL_DESC" />
+                <field name="effect_velocity" type="text" size="9" default="1.3" label="MOD_BTSLIDESHOW_FIELD_EFFECT_VELOCITY_LABEL" description="MOD_BTSLIDESHOW_FIELD_EFFECT_VELOCITY_DESC" />
+                <field name="auto_play" type="radio" class="btn-group"
+					default="1" label="MOD_BTSLIDESHOW_FIELD_AUTOPLAY_LABEL" description="MOD_BTSLIDESHOW_FIELD_AUTOPLAY_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="load_jquery" type = "list" default = "1" label = "MOD_BTSLIDESHOW_FIELD_LOAD_JQUERY_LABEL" description = "">
+                    <option value="1">Auto</option>
+					<option value="2">JYES</option>
+					<option value="0">JNO</option>
+                    
+                </field>
+            </fieldset>
+            <fieldset name="layout_setting" label="MOD_BTSLIDESHOW_FIELDSET_LAYOUT_SETTING">
+                <field name="layout" type="layout" label="MOD_BTSLIDESHOW_FIELD_LAYOUT"/>
+				<field name="responsive" type="radio" class="btn-group"
+					default="0" label="MOD_BTSLIDESHOW_FIELD_RESPONSIVE_LABEL" description="MOD_BTSLIDESHOW_FIELD_RESPONSIVE_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="touchscreen" type="radio" class="btn-group"
+					default="0" label="MOD_BTSLIDESHOW_FIELD_TOUCHSCREEN_LABEL" description="MOD_BTSLIDESHOW_FIELD_TOUCHSCREEN_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+                <field name="navigation_type" type="navigation" label="MOD_BTSLIDESHOW_FIELD_NAVIGATION_TYPE_LABEL"/>
+                <field name="animateNumberOut" type="text" class="bt_color" default="#565656" label="MOD_BTSLIDESHOW_FIELD_ANIMATE_NUMBER_OUT_LABEL" description="MOD_BTSLIDESHOW_FIELD_ANIMATE_NUMBER_OUT_DESC"/>
+                <field name="animateNumberOver" type="text" class="bt_color" default="#c36305" label="MOD_BTSLIDESHOW_FIELD_ANIMATE_NUMBER_OVER_LABEL" description="MOD_BTSLIDESHOW_FIELD_ANIMATE_NUMBER_OVER_DESC"/>
+                <field name="animateNumberActive" type="text" class="bt_color" default="#c36305" label="MOD_BTSLIDESHOW_FIELD_ANIMATE_NUMBER_ACTIVE_LABEL" description="MOD_BTSLIDESHOW_FIELD_ANIMATE_NUMBER_ACTIVE_DESC"/>
+                
+                <field name="caption" type="radio" class="btn-group" default="1" label="MOD_BTSLIDESHOW_FIELD_CAPTION_LABEL" description="MOD_BTSLIDESHOW_FIELD_CAPTION_DESC">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+                
+                <field name="caption_width" type="text" size="9" default="" label="MOD_BTSLIDESHOW_FIELD_CAPTION_WIDTH_LABEL" description="MOD_BTSLIDESHOW_FIELD_CAPTION_WIDTH_DESC" />
+                <field name="caption_height" type="text" size="9" default="" label="MOD_BTSLIDESHOW_FIELD_CAPTION_HEIGHT_LABEL" description="MOD_BTSLIDESHOW_FIELD_CAPTION_HEIGHT_DESC" />
+                
+                <field name="caption_background" type="text" class="bt_color" size="9" default="#000000" label="MOD_BTSLIDESHOW_FIELD_CAPTION_BACKGROUND_LABEL" description="MOD_BTSLIDESHOW_FIELD_CAPTION_BACKGROUND_DESC"/>
+                <field name="caption_opacity" type="text" size="9" default="0.7" label="MOD_BTSLIDESHOW_FIELD_CAPTION_OPACITY_LABEL" description=""/>
+                <field name="show_button" type="radio" class="btn-group" default="1" label="MOD_BTSLIDESHOW_FIELD_SHOW_BUTTON_LABEL" description="MOD_BTSLIDESHOW_FIELD_SHOW_BUTTON_DESC">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+                <field name="title_font" type="list" default="Oswald" label="MOD_BTSLIDESHOW_FIELD_TITLE_FONT_LABEL" description = "">
+                    <option value ="Oswald">Oswald</option>
+                    <option value ="Arial">Arial</option>
+                    <option value ="Tahoma">Tahoma</option>
+                    <option value ="Verdana">Verdana</option>
+                    <option value ="sans-serif">Sans Serif</option>
+                </field>
+                <field name="title_color" class="bt_color" type="text" default="#ffffff" label="MOD_BTSLIDESHOW_FIELD_TITLE_COLOR_LABEL" description = ""/>
+                <field name="title_size" type="text" default="18" label="MOD_BTSLIDESHOW_FIELD_TITLE_FONT_SIZE_LABEL" description = ""/>
+                
+                <field name="desc_font" type="list" default="Arial" label="MOD_BTSLIDESHOW_FIELD_DESCRIPTION_FONT_LABEL" description = "">
+                    <option value ="Arial">Arial</option>
+                    <option value ="Tahoma">Tahoma</option>
+                    <option value ="Verdana">Verdana</option>
+                </field>
+                <field name="desc_color" class="bt_color" type="text" default="#ffffff" label="MOD_BTSLIDESHOW_FIELD_DESCRIPTION_COLOR_LABEL" description = ""/>
+                <field name="desc_size" type="text" default="12" label="MOD_BTSLIDESHOW_FIELD_DESCRIPTION_FONT_SIZE_LABEL" description = ""/>
+                <field name="show_progressbar" type="radio" class="btn-group" default = "1" label="MOD_BTSLIDESHOW_FIELD_SHOW_PROGRESS_BAR_LABEL">
+                    <option value ="1">JYES</option>
+                    <option value ="0">JNO</option>
+                </field>
+                <field name="progressbar_color" type="text" class="bt_color" default="#ca6708" label="MOD_BTSLIDESHOW_FIELD_PROGRESS_BAR_COLOR_LABEL"></field>
+                <field type="asset" name="asset" path="modules/mod_btslideshow_pro/admin/" />
+                <field type="ajax" name="ajax"/>
+            </fieldset>
+            
+        </fields>
+        
+    </config>
+	
+</extension>

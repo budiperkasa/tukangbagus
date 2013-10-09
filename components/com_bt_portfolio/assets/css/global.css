@@ -1,0 +1,43 @@
+/** GRID VIEW CSS**/
+
+.btp h2.seperate{
+	border-bottom:1px solid grey;
+}
+
+.btp-catdesc{
+	margin:10px 0px;
+}
+.btp-grid-view,.btp-grid-row{
+	overflow:hidden;
+	clear:both;
+}
+
+.btp-grid-item{
+	float:left;
+	text-align:center;
+	margin-bottom:10px;
+}
+.btp-grid-item  .img-link-cat,.btp-grid-item .img-link-custom-btp{
+	display:block!important;
+	margin:0 10px;
+}
+.btp-grid-item .btp-item-image{
+	display:block!important;
+}
+.btp-grid-item img{
+	width:100%;
+}
+.btp-list-categories .btp-item{
+	float:left;
+	padding:0 10px;
+}
+.box_clone > a, .container_skitter .image > a{
+	cursor:default;
+}
+.btp-zoom-image,.label_skitter .visit-site,.zoom-img-list-custom-btp,.custom-btp-template .visit-site{
+	left:-200px;
+}
+.container_skitter img{
+	max-width:none;
+	box-shadow: #000 0em 0em 0em;
+}

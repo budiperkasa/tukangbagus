@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="1.7"
+	client="site"
+	method="upgrade">
+	<name>BT Twitter Feeds</name>
+	<author>Bowthemes</author>
+	<creationDate>Oct 2011</creationDate>
+	<copyright>Copyright (C) 2012 Bowthemes. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>support@bowthemes.com</authorEmail>
+	<authorUrl>www.bowthemes.com</authorUrl>
+	<version>1.1</version>
+	<description><![CDATA[
+		<style>
+			.bt_description h3{
+				text-transform: uppercase;
+				margin: 20px 0px 10px 0px;
+			}
+			.bt_description img{
+				float:left;
+				margin:5px 5px 5px 0px;
+			}
+			.bt_description p,.bt_description li{
+				padding: 5px 5px 5px 30px;	
+				list-style: none outside none;				
+			}
+			
+			.bt_description ul.list-style li{
+				background:url(../modules/mod_bt_twitterfeeds/admin/images/tick.png) 0px 6px no-repeat;				
+				padding-left:30px;
+				line-height:15px;
+			}
+		</style>
+		<div class="bt_description">
+			<h3>BT Twitter feeds Module Version 1.1</h3>			
+			<a href="http://bowthemes.com" target="_blank"><img src="../modules/mod_bt_twitterfeeds/admin/images/bt-twitter-feeds.png"></a>
+			<p>BT Twitter feeds is a simple and free module for Joomla. This module loads the tweets from the twitter account that is set from the module parameters page. 
+			</p>
+			<br clear="both" />
+			<h3>Features</h3>
+			<ul class="list-style">
+				<li>Cross Browser Support: IE7+, Firefox 2+, Safari 3+, Chrome 8+, Opera 9+</li>
+				<li>Easiness to change display style</li>
+				<li>Number of tweets options</li>
+				<li>Hide/Show avatar options</li>
+				<li>Compatibility with Joomla 2.5 and Joomla 3.0</li>
+				<li>Video tutorials and forum support provided</li>
+			</ul>
+			<h3>UPgrade versions</h3>
+			<p>
+				Your current versions is 1.1. <a target="_blank" href="http://bowthemes.com/bt-twitter-feed.html">Find our latest versions now</a>
+			</p>
+			<h3>Userful links</h3>
+			<ul>
+				<li><a target="_blank" href="http://bowthemes.com/bt-twitter-feed.html">Video tutorials</a></li>
+				<li><a target="_blank" href="http://bowthemes.com/twitter-feed/">Report bug</a></li>
+				<li><a target="_blank" href="http://bowthemes.com/twitter-feed/">Forum support</a></li>
+			</ul>
+			<h3>About bow themes & copyright</h3>	
+			<p>
+				Bow Themes is Professional Joomla template provider. We are focused on creating unique, attractive and clean templates without loosing flexibility and simplicity of customization
+			</p>
+			Copyright (C) 2012 BowThemes	
+
+		</div>
+	]]></description>
+	<files>
+		<filename module="mod_bt_twitterfeeds">mod_bt_twitterfeeds.php</filename>
+		<folder>tmpl</folder>
+		<folder module="mod_bt_twitterfeeds">admin</folder>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<languages folder="languages">
+		<language tag="en-GB">en-GB.mod_bt_twitterfeeds.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset
+				name="Settings" label="MOD_BT_TWITTERFEEDS_SETTINGS">
+				<field
+					name="username"
+					type="text"
+					default="BowThemes"
+					label="MOD_BT_TWITTERFEEDS_USERNAME_LABEL"
+					description="MOD_BT_TWITTERFEEDS_USERNAME_DESC">
+				</field>
+				<field
+					name="number_of_tweets"
+					type="text"
+					default="10"
+					label="MOD_BT_TWITTERFEEDS_NUMBER_TWEET_LABEL"
+					description="MOD_BT_TWITTERFEEDS_NUMBER_TWEET_DESC">			
+				</field>
+				<field
+					name="width"
+					type="text"
+					default="auto"
+					label="MOD_BT_TWITTERFEEDS_WIDTH_LABEL"
+					description="MOD_BT_TWITTERFEEDS_WIDTH_DESC">
+				</field>
+				<field
+					name="height"
+					type="text"
+					default="300"
+					label="MOD_BT_TWITTERFEEDS_HEIGHT_LABEL"
+					description="MOD_BT_TWITTERFEEDS_HEIGHT_DESC">
+				</field>
+			</fieldset>
+			<fieldset name="Preferences" label="MOD_BT_TWITTERFEEDS_PREFERENCES">
+				<field
+					name="poll_new"
+					type="radio"
+					default="true"
+					class="btn-group"
+					label="MOD_BT_TWITTERFEEDS_POLL_NEW_LABEL"
+					description="MOD_BT_TWITTERFEEDS_POLL_NEW_DESC">
+					<option
+						value="true">JYES</option>
+					<option
+						value="false">JNO</option>
+				</field>
+				<field
+					name="scrollbar"
+					type="radio"
+					class="btn-group"
+					default="true"
+					label="MOD_BT_TWITTERFEEDS_SCROLLBAR_LABEL"
+					description="MOD_BT_TWITTERFEEDS_SCROLLBAR_DESC">
+					<option
+						value="true">JYES</option>
+					<option
+						value="false">JNO</option>
+			
+				</field>
+				
+				<field
+					name="show_avatar"
+					type="radio"
+					class="btn-group"
+					default="true"
+					label="MOD_BT_TWITTERFEEDS_SHOW_AVATAR_LABEL"
+					description="MOD_BT_TWITTERFEEDS_SHOW_AVATAR_DESC">
+					<option
+						value="true">JYES</option>
+					<option
+						value="false">JNO</option>
+			
+				</field>
+				<field
+					name="show_timestamp"
+					type="radio"
+					class="btn-group"
+					default="true"
+					label="MOD_BT_TWITTERFEEDS_SHOW_TIMESTAMP_LABEL"
+					description="MOD_BT_TWITTERFEEDS_SHOW_TIMESTAMP_DESC">
+					<option
+						value="true">JYES</option>
+					<option
+						value="false">JNO</option>
+			
+				</field>
+				<field
+					name="show_hastag"
+					type="radio"
+					class="btn-group"
+					default="true"
+					label="MOD_BT_TWITTERFEEDS_SHOW_HASTAG_LABEL"
+					description="MOD_BT_TWITTERFEEDS_SHOW_HASTAG_LABEL">
+					<option
+						value="true">JYES</option>
+					<option
+						value="false">JNO</option>
+			
+				</field>
+			</fieldset>
+			<fieldset name="Appearance"  label="MOD_BT_TWITTERFEEDS_APPEARANCE">
+				<field
+					name="shell_background_color"
+					type="text"
+					class="bt_color"
+					default="#666666"
+					label="MOD_BT_TWITTERFEEDS_SHELLBG_LABEL"
+					description="MOD_BT_TWITTERFEEDS_SHELLBG_DESC">
+				</field>
+				<field
+					name="shell_text_color"
+					type="text"
+					class="bt_color"
+					default="#ffffff"
+					label="MOD_BT_TWITTERFEEDS_SHELLTEXTCOLOR_LABEL"
+					description="MOD_BT_TWITTERFEEDS_SHELLTEXTCOLOR_DESC">
+				</field>
+				<field
+					name="tweet_background_color"
+					type="text"
+					default="#ffffff"
+					class="bt_color"
+					label="MOD_BT_TWITTERFEEDS_TWEETBG_LABEL"
+					description="MOD_BT_TWITTERFEEDS_TWEETBG_DESC">
+				</field>
+				<field
+					name="tweet_text_color"
+					type="text"
+					default="#333333"
+					class="bt_color"
+					label="MOD_BT_TWITTERFEEDS_TWEETTEXT_COLOR_LABEL"
+					description="MOD_BT_TWITTERFEEDS_TWEETTEXT_COLOR_DESC">
+				</field>
+				<field
+					name="link_color"
+					type="text"
+					class="bt_color"
+					default="#095197"			
+					label="Link color"
+					description="Link color">
+				</field>
+			
+			</fieldset>
+	
+			<fieldset
+				name="advanced">
+
+
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+
+				<field
+					name="cache"
+					type="list"
+					default="1"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC">
+					<option
+						value="1">JGLOBAL_USE_GLOBAL</option>
+					<option
+						value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+				<field
+					name="cache_time"
+					type="text"
+					default="900"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+				<field
+					name="cachemode"
+					type="hidden"
+					default="static">
+					<option
+						value="static"></option>
+				</field>
+				<field addfieldpath="/modules/mod_bt_twitterfeeds/admin/formfield" type="asset" name="asset" path="modules/mod_bt_twitterfeeds/admin/" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

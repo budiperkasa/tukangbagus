@@ -1,0 +1,513 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.member_content a, .member_content a:hover
+{
+	color: #000000;
+
+}
+
+.userprof_underline
+{
+	border-color: #000000;
+}
+
+.userprof{
+	font-family:Tahoma, Calibri, Verdana, Geneva, sans-serif;
+	font-size: 13px;
+}
+
+.userprof_title{
+	color: #3e3e3e;
+}
+
+.userprof_module{
+	color: #ffffff;
+	background-color: #000000;
+	background-image: url('images/index.html\2f buttons\2f newbtn_middle\2e png');
+	background-repeat: repeat-x;
+}
+.userprof_module_border{
+	border-color: #000000;
+}
+
+.userprof_module a{
+	color: #ffffff;
+}
+
+
+.userprof_module a:hover{
+	color: #ffffff;
+
+}
+
+.userprof_moduleinactive{
+	color: #000000;
+	background-color: #808080;
+	background-image: url('images/index.html\2f misc\2f blog\2f top-highlight\2e png');
+	background-repeat: repeat-x;
+}
+.userprof_moduleinactive_border{
+	border-color: #c1c1c1;
+}
+
+.userprof_moduleinactive a{
+	color: #417394;
+}
+
+
+.userprof_moduleinactive a:hover{
+	color: #417394;
+
+}
+
+.userprof_headers{
+	color: #3e3e3e;
+	background-color: #f2f6f8;
+	background-image: ;
+	background-repeat: repeat-x;
+}
+
+.userprof_headers_border{
+	border-color: #CEDFEB;
+}
+
+.userprof_headers a{
+	color: #417394;
+}
+
+
+.userprof_headers a:hover{
+	color: #417394;
+
+}
+
+.userprof_content{
+	color: rgb(51, 51, 51);
+	background-color: #fafafa;
+	background-image: ;
+	background-repeat: repeat;
+}
+
+.userprof_content a {
+	color: #000000;
+	background-color: transparent;
+}
+
+li.userprof_content a {
+	color: #000000;
+}
+
+.userprof_content a:hover {
+	color: #000000;
+}
+
+.userprof_content .shade
+{
+	color: rgb(51, 51, 51);
+
+}
+dd.userprof_content {
+	color: #000000;
+	background-color: #fafafa;
+	border-color: #fafafa;
+}
+
+dl.tabslight dd.userprof_moduleinactive a, dl.tabslight dd.userprof_moduleinactive a:hover":{"bc":"moduleinactive_border
+{
+	color: #000000;
+}
+
+/* I know these next few have the same settings. Since the class definition becomes an array key for a javascript array
+it's better to keep to one line. That requires three separate lines*/
+dl.tabslight dd a, #sidebar_container.member_summary .blocksubhead.smaller, #sidebar_container.member_summary .blockrow{
+	font-family:Tahoma, Calibri, Verdana, Geneva, sans-serif;
+	font-size: 13px;
+}
+.textcontrols .textcontrols a, a.textcontrol, #sidebar_container.member_summary .mainblock .usertitle, #sidebar_container .userprof_content a{
+	font-family:Tahoma, Calibri, Verdana, Geneva, sans-serif;
+	font-size: 13px;
+}
+
+.profile_content .blog_stats, .profile_content .blogentrybit .blog_meta{
+	font-family:Tahoma, Calibri, Verdana, Geneva, sans-serif;
+	font-size: 13px;
+}
+
+
+dl.tabslight dd.userprof_module a{
+	color: #ffffff;
+	background-color: #000000;
+	border-color: #000000;
+}
+
+
+dl.tabslight dd.userprof_module a:hover{
+    color: #ffffff;
+}
+
+dl.tabslight dd.userprof_moduleinactive a{
+	color: #000000;
+	background-color: transparent;
+	background-image: none;
+	border-color: #c1c1c1;
+}
+
+dl.tabslight dd.userprof_content a{
+	color: rgb(51, 51, 51);
+	background-color: #fafafa;
+	border-color: #fafafa;
+}
+
+li.userprof_content{
+	margin-bottom: .5em;
+	color: rgb(51, 51, 51);
+	background-color: #fafafa;
+	background-image: ;
+	background-repeat: repeat;
+}
+
+
+.userprof_content_border{
+	border-color: #fafafa;
+	border-style: solid;
+	border-width: 1px;
+}
+
+li.userprof_content_border{
+	border-color: #fafafa;
+}
+
+.userprof_button{
+	color: #FFFFFF;
+	background-color: #000000;
+	background-image: url('images/index.html\2f gradients\2f generic_button\2e png');
+	background-repeat: repeat-x;
+	border-color: #a8a8a8;
+}
+
+.body_wrapper{
+	background-color: #FFFFFF;
+	background-image: ;
+	background-repeat: repeat;
+}
+
+
+#colorbox_title_text_color{
+	background-color: #3e3e3e;
+}
+
+#colorbox_page_background{
+	background-color: #FFFFFF;
+}
+
+#colorbox_module_text_color{
+	background-color: #ffffff;
+}
+
+#colorbox_module_link_color{
+	background-color: #ffffff;
+}
+
+#colorbox_module_background{
+	background-color: #000000;
+}
+
+#colorbox_module_border{
+	background-color: #000000;
+}
+
+#colorbox_content_text_color{
+	background-color: rgb(51, 51, 51);
+}
+
+#colorbox_content_link_color{
+	background-color: #000000;
+}
+
+#colorbox_content_background{
+	background-color: #fafafa;
+}
+
+#colorbox_content_border{
+	background-color: #fafafa;
+}
+
+#colorbox_button_text_color{
+	background-color: #FFFFFF;
+}
+
+#colorbox_button_background{
+	background-color: #000000;
+}
+
+#colorbox_button_border{
+	background-color: #a8a8a8;
+}
+
+#colorbox_moduleinactive_text_color{
+	background-color: #000000;
+}
+
+#colorbox_moduleinactive_link_color{
+	background-color: #417394;
+}
+
+#colorbox_moduleinactive_background{
+	background-color: #808080;
+}
+
+#colorbox_moduleinactive_border{
+	background-color: #c1c1c1;
+}
+
+#colorbox_headers_text_color{
+	background-color: #3e3e3e;
+}
+
+
+#colorbox_headers_link_color{
+	background-color: #417394;
+}
+
+#colorbox_headers_background{
+	background-color: #f2f6f8;
+}
+
+#colorbox_headers_border{
+	background-color: #CEDFEB;
+}
+
+#colorbox_page_link_color{
+	background-color: #000000;
+}
+
+/**tabslight userprof_module a{
+	background-image: none;
+	background-color: #000000;
+	color: ;
+}**/
+
+#sidebar_container .userprof_content .blockrow{
+	color: rgb(51, 51, 51);
+	background-color: #fafafa;
+	
+	border-color: #fafafa;
+}
+
+#sidebar_container .userprof_content a, #sidebar_container .userprof_content a:hover
+{
+	color: #000000;
+}
+
+.memberprofiletabunder {
+	background-color: #000000;
+	background-image: url('images/index.html\2f buttons\2f newbtn_middle\2e png');
+	background-repeat: repeat-x;
+}
+.pagination span a, .pagination span a.popupctrl {
+	color: #417394;
+	background-color: #808080;
+	background-image: url('images/index.html\2f misc\2f blog\2f top-highlight\2e png');
+	background-repeat: repeat-x;
+	border-color: #c1c1c1;
+}
+
+.pagination span a:hover
+{
+	border-color: #c1c1c1;
+	color: #417394;
+}
+
+.pagination span.selected a, .pagination span.selected a.popupctrl {
+	color: #ffffff;
+	background-color: #000000;
+	background-image: url('images/index.html\2f buttons\2f newbtn_middle\2e png');
+	background-repeat: repeat-x;
+	border-color: #000000;
+}
+
+
+#sidebar_container.member_summary 
+{
+	color: #000000;
+	background-color: #808080;
+	background-image: url('images/index.html\2f misc\2f blog\2f top-highlight\2e png');
+	background-repeat: repeat-x;
+	border-color: #c1c1c1;
+}
+#sidebar_container .blocksubhead 
+{
+	color: #000000;
+	border-color: #c1c1c1;
+}
+
+.tabslight dd.userprof_moduleinactive:hover {
+	border-color: #000000;
+}
+
+dl.stats dt, #sidebar_container dl.stats, #sidebar_container .blockbody.userprof_content, #sidebar_container .userprof_content .time, .userprof_content .time  {
+	color: rgb(51, 51, 51);
+	background-color: transparent;
+	background-image: none;
+}
+
+#sidebar_container a
+{
+	color: #417394;
+}
+
+#sidebar_container a:hover
+{
+	color: #417394;
+}
+.profile_editor_border, .profile_content .actionbuttons
+{
+	border-color: #CEDFEB;
+
+}
+
+.profile_editor_border {
+	border-top:none;
+}
+.userprof_editor {
+	border-width: 1px 0px 0px 0px;
+	border-style: solid;
+	border-color: #CEDFEB;
+}
+.tabbackground {
+	width:100%;
+}
+
+
+.moduleinactive_bg{
+	color: #000000;
+	background-color: #808080;
+	background-image: url('images/index.html\2f misc\2f blog\2f top-highlight\2e png');
+	background-repeat: repeat-x;
+	border-color: #c1c1c1;
+}
+
+#sidebar_container.member_summary .textcontrol
+{
+	color: #417394;
+}
+
+#sidebar_container.member_summary .textcontrol a
+{
+	color: #417394;
+}
+
+#sidebar_container.member_summary .textcontrol a:hover
+{
+	color: #417394;
+}
+
+.userprof .postbit .postdate .time {
+	color: #3e3e3e;
+}
+
+.userprof .postbit .postdate .time a {
+	color: #417394;
+}
+
+.userprof_content .quickedit .blockrow .description {
+	color: rgb(51, 51, 51);
+}
+
+/* Activity Stream */
+
+#activity_tab_container {
+	margin-bottom:20px;
+}
+
+#activity_tab_container > div {
+	overflow:hidden;
+	background-color: #808080;
+}
+
+dl.as-tabs dt {
+	display:none;
+}
+
+dl.as-tabs dd {
+	float:left;
+}
+
+dl.as-tabs dd a {
+	font-size:9px;
+	font-weight:bold;
+	color:#3e3e3e;
+	text-decoration:none;
+	text-align:center;
+	padding:0 10px;
+	height:24px;
+	line-height:24px;
+	display:block;
+}
+
+dl.as-tabs dd#asall a {
+	font-size:11px;
+	line-height:22px;
+}
+
+dl.as-tabs dd#asuser a {
+	background:url(images/site_icons/profile.png) left 2px no-repeat; 
+	margin-left:8px;
+	padding-left:18px;
+}
+
+dl.as-tabs dd#asfriend a {
+	background:url(images/site_icons/network.png) left 2px no-repeat; 
+	margin-left:8px;
+	padding-left:18px;
+}
+
+dl.as-tabs dd#asphoto a {
+	background:url(images/site_icons/photo.png) left 5px no-repeat;
+	margin-left:8px;
+	padding-left:18px;
+}
+
+dl.as-tabs dd#assub a {
+	background:url(images/site_icons/subscribe.png) left 2px no-repeat; 
+	margin-left:8px;
+	padding-left:18px;
+}
+
+dl.as-tabs dd a {
+	color: #000000;
+}
+
+dl.as-tabs dd.selected a {
+	color: #ffffff;
+}
+
+.activitystream_block dd.selected, dd.userprof_module {
+	color: #ffffff;
+	background-color: #000000;
+	border-color: #000000;
+	background-image: url('images/index.html\2f buttons\2f newbtn_middle\2e png');
+	background-repeat: repeat-x;
+}
+
+.activitystream_block dd, dd.userprof_moduleinactive {
+	color: #000000;
+	background-color: #808080;
+	border-color: #c1c1c1;
+	background-image: url('images/index.html\2f misc\2f blog\2f top-highlight\2e png');
+	background-repeat: repeat-x;
+}
+
+.newactivity a, .newactivity > span, 
+.moreactivity a, .moreactivity span {
+	color: #3e3e3e;
+}
+
+.as-tabs dd.selected, .as-tabs dd.userprof_module {
+	border: 1px solid #000000;
+}
+
+.as-tabs dd, .as-tabs dd.userprof_moduleinactive {
+	border: 1px solid #c1c1c1;
+}

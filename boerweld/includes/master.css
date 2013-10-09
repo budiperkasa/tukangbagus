@@ -1,0 +1,781 @@
+body {
+	background: #ddd;
+	color: black;
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+	margin: 0;
+	padding: 0;
+}
+a {
+	color: #f63;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+a img {
+	border: none;
+}
+form { 
+	margin: 0;
+	padding: 0;
+}
+h1 { font-size: 2.0em; /*24*/ }
+h2 { font-size: 1.5em; /*18*/ }
+h3 { font-size: 1.2em; /*14*/ }
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+.clearfix {display: inline-block;}
+/* no macIE \*/
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+/* end */
+
+#wrap {
+	background: black;
+	margin: 0 auto;
+	position: relative;
+	width: 956px;
+}
+
+#printableHeader {
+	background: white;
+	display: none;
+	padding-top: 20px;
+	padding-left: 23px;
+		background: black;
+		padding-bottom: 20px;
+}
+#printmelink {
+	display: block;
+	float: right;
+	font-size: 11px;
+	margin: 25px 25px 0 0;
+}
+.addthis{
+	display: inline;
+	float: right;
+	margin: 25px 10px 0 0;
+}
+#printinfo {
+	background: #f63 url('../images/printshadow.png') repeat-x left bottom; /*FEFF8F*/
+	overflow: hidden;
+}
+* html #printinfo {
+	background: #f63 url('../images/printshadow.gif') repeat-x left bottom;
+}
+#printinfowrap {
+	background: url('../images/printablebg.png') no-repeat left 5px;
+	margin: 0 auto;
+	padding: 1px 1px 34px;
+	width: 955px;
+}
+#printinfo a {
+	color: black;
+	font-weight: bold;
+}
+#printinfo h2 {
+	color: white;
+	margin: 16px 15px 2px;
+}
+#printinfo h3 {
+	margin: 0;
+}
+#printinfo p {
+	margin: 0 0 12px;
+}
+#printableHelp {
+	min-height: 89px;
+	padding: 15px 380px 15px 15px;
+}
+* html #printableHelp {
+	height: 89px;
+}
+#printableNow {
+	background: url('../images/printnow.png') no-repeat left top;
+	display: block;
+	float: left;
+	margin: 5px;
+	height: 24px;
+	width: 145px;
+}
+#printableReturn {
+	background: url('../images/returntosite.png') no-repeat left top;
+	display: block;
+	float: left;
+	margin: 5px;
+	height: 24px;
+	width: 146px;
+}
+#printableNow span, #printableReturn span, #printableClose span { display: none; }
+#printableClose {
+	background: url('../images/printableclose.png') no-repeat left top;
+	display: block;
+	float: right;
+	margin: 19px 8px 0 0;
+	height: 13px;
+	width: 51px;
+}
+
+#header {
+	background: black url('../images/header.png') no-repeat top left;
+	border-bottom: 3px solid white;
+	color: #f63;
+	height: 67px;
+}
+#header h1 {
+	float: left;
+	margin: 0;
+}
+#header h1 a {
+	display: block;
+	height: 67px;
+	width: 237px;
+}
+#header h1 a span { display: none; }
+#mainnav a {
+	display: block;
+	float: left;
+	height: 67px;
+	margin-left: 1px;
+}
+#mainnav a:hover,
+#mainnav a.hovon {
+	background-color: #f63;
+	background-position: left bottom;
+}
+#mainnav a span, #mainnav br { display: none; }
+#navProducts { background: url('../images/nav/products-sm.png') no-repeat left top; width: 94px; }
+#navWTB { background: url('../images/nav/wheretobuy.png') no-repeat left top; width: 103px; }
+#navService { background: url('../images/nav/service-sm.png') no-repeat left top; width: 125px; }
+#navELearning { background: url('../images/nav/elearning.png') no-repeat left top; width: 95px; }
+#navContactUs { background: url('../images/nav/contactus.png') no-repeat left top; width: 95px; }
+#navWeldTalk { background: url('../images/nav/weldtalk.png') no-repeat left top; width: 77px; }
+.dropnav {
+	display: none;
+	font-size: 11px;
+	position: absolute;
+	top: 67px;
+	left: 238px;
+	z-index: 9998;
+}
+.dropnav td {
+	font-family: Arial, sans-serif;
+	font-size: 11px;
+}
+.dropnavarrow {
+	background: url('../images/nav/dropnav.png') no-repeat center top;
+	height: 21px;
+}
+#dropnavService { left: 437px; }
+#dropnavProducts .dropnavarrow { width: 94px; }
+#dropnavService .dropnavarrow { width: 125px; }
+
+/*Added Later By SA Pros*/
+#dropnavWhereToBuy { 
+/*left: 332px; */
+left: 154px;  
+}
+
+#dropnavWhereToBuy .dropnavarrow { 
+width: 105px;
+margin-left:180px;
+
+
+}
+
+.dropnavcontent {
+	background: white;
+	border: 1px solid black;
+}
+.dropnav h3 {
+	background-position: 12px center;
+	background-repeat: no-repeat;
+	color: #666;
+	font-size: 1.0em;
+	margin: 10px 0 0;
+	padding: 5px 35px;
+}
+.dropnav h3.nom {
+	padding-left: 12px;
+}
+.dropnav td {
+	border-right: 1px solid #999;
+	padding: 0 0 10px 0;
+	vertical-align: top;
+}
+.dropnav td.tdlast {
+	border-right: none;
+}
+#mainnav .dropnav a {
+	background-position: 12px center;
+	background-repeat: no-repeat;
+	color: #f63;
+	float: none;
+	height: auto;
+	margin-left: 0;
+	padding: 5px 35px;
+}
+#mainnav .dropnav a:hover {
+	background-color: #eee;
+	text-decoration: none;
+}
+
+#mainnav .dropnav .graytd {
+    background-color: #eee;
+    text-decoration: none;
+}
+
+#dnElecWire, #dnHelmets, #dnAccessories {
+	font-weight: bold;
+	margin: 10px 0 0;
+}
+
+#dnWireFeed { background-image: url('../images/mp/wirefeed.png'); }
+#dnSpoolGuns { background-image: url('../images/mp/spoolgun.png'); }
+#dnStick { background-image: url('../images/mp/stick.png'); }
+#dnTIG { background-image: url('../images/mp/tig.png'); }
+#dnSpot { background-image: url('../images/mp/spot.png'); }
+#dnBattery { background-image: url('../images/mp/battery.png'); }
+#dnGenerators { background-image: url('../images/mp/generator.png'); }
+#dnPlasma { background-image: url('../images/mp/plasma.png'); }
+#dnOxyfuel { background-image: url('../images/mp/oxyfuel.png'); }
+#dnRodWire { background-image: url('../images/mp/rodwire.png'); }
+#dnHelmets { background-image: url('../images/mp/helmets.png'); }
+#dnAccessories { background-image: url('../images/mp/accessories.png'); }
+#dnElecWire { background-image: url('../images/mp/electrodewire.png'); }
+
+#dnHelmets {
+	margin-top: 45px;
+}
+
+#sitesearch {
+	float: left;
+	height: 35px; /*67*/
+	margin-left: 1px;
+	padding: 32px 0 0 23px;
+	width: 196px; /*219*/
+}
+#sitesearch span { display: none; }
+#sitesearch #sitesearchquery {
+	float: left;
+	margin: 3px 4px 0 0;
+	width: 155px;
+}
+#sitesearch #slimgo {
+	display: none;
+}
+
+#subheader {
+	background: #f63;
+	color: white;
+	font-size: 11px;
+	line-height: 12px;
+	padding: 3px 35px;
+}
+#subheader a, #subheader a:visited {
+	color: white;
+}
+#subheaderrt {
+	float: right;
+	text-align: right;
+}
+#crumbs {
+	color: black;
+}
+
+#main, #mainfree, #mainpad {
+	background: white;
+	min-height: 300px;
+	padding: 18px 20px;
+}
+* html #main, * html #mainfree, * html #mainpad {
+	height: 300px;
+}
+#mainfree {
+	padding: 0;
+}
+#mainpad {
+	padding: 18px 80px;
+}
+.dblsp {
+	line-height: 2em;
+}
+.onprintable {
+	background: white !important;
+}
+
+#errormsg {
+	background: #FDD url('../images/error.gif') no-repeat right bottom;
+	border: 2px solid #900;
+	display: none;
+	margin: 10px 0;
+	min-height: 50px;
+	padding: 10px 15px;
+	width: 400px;
+}
+* html #errormsg {
+	height: 50px;
+}
+
+#footer {
+	background: #f63;
+	border-top: 3px solid black;
+	clear: both;
+	color: white;
+	font-size: 11px;
+	line-height: 1.3em;
+	padding: 4px 10px 5px;
+	text-align: center;
+}
+#footer a, #footer a:visited {
+	color: white;
+}
+#footer .warrantyicon {
+    float: right;
+}
+#copyright {
+	color: white;
+	font-size: 11px;
+	padding: 15px 10px;
+	background: #012555;
+	overflow: hidden;
+}
+
+#copyright-main {
+	float: left;
+	width: 200px;
+}
+
+#copyright-social {
+	float: right;
+	width: 260px;
+}
+
+/* -----------------------------------------------------------
+FFA 
+----------------------------------------------------------- */
+#ffaentry{
+	float: left;
+	width: 398px;
+}
+#ffaentry form{
+	text-align: right;
+}
+#ffaentry label{
+	font-weight: bold;
+	font-size: 90%;
+}
+#ffaentry form p{
+	width: 100%;
+	overflow: hidden;
+	text-align: left;
+}
+#ffaentry .offers{
+	float: left;
+}
+#ffaentry .offers input{
+	float: left;
+}
+#ffaentry .offers label{
+	width: 150px;
+	float: left;
+}
+#ffaentry form #submit{
+	float: right;
+}
+#ffaside{
+	float:right;
+	width: 507px;
+	background: url('../images/ffaentry.jpg') top left no-repeat;
+	padding-top: 375px;
+}
+#ffaside p{
+	font-weight: bold;
+	font-size: 1.1em;
+	width: 255px;
+	padding: 15px 0 0 0;
+	margin: 0 0 0 15px;
+}
+.ffapage #main:after{
+content: ".";
+display: block;
+clear: both;
+visibility: hidden;
+height: 0;
+}
+#ffaside p.notes{
+	font-size: 90%;
+	font-weight: normal;
+}
+#ffaentry p.enter{
+	font-weight: bold;
+	margin-top: 50px;
+	color: #ec4b1b;
+}
+#ffaentry h1.herd{
+	display: block;
+	background: url('../images/haveyouherd.gif') top left no-repeat;
+	text-indent: -9999px;
+	margin: 0 0 0 0;
+	padding: 0;
+	width: 319px;
+	height: 80px;
+	font-size: 70%;
+}
+#ffaentry p.error{
+	color: red;
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+	font-size: 90%;
+	text-align: right;
+}
+#ffaentry input.error{
+	background: #f5c73a;
+}
+#idxWeldTalk .cblockdk {
+	right: 12px;
+}
+#weldtalklogo {
+	margin-left: -15px;
+	margin-bottom: 10px;
+}
+#weldtalklogo a {
+	background: url('../images/weldtalk-logo.png') no-repeat left top;
+	display: block;
+	height: 69px;
+	width: 96px;
+}
+#weldtalklogo span { display: none; }
+#weldtalkemail {
+	border: 1px solid #7f9db9;
+	font-size: 11px;
+	padding: 2px 3px;
+	width: 100px;
+}
+.cblock {
+	background: url('../images/btmsection.png') no-repeat left bottom;
+	float: left;
+	margin: 20px 0 20px 15px;
+	padding: 0 15px 29px;
+	position: relative;
+	width: 195px; /*225*/
+}
+.cblock h3 {
+	color: #f63;
+	margin: 0;
+}
+.cblock h3 a {
+	color: #f63;
+}
+.post {
+	margin: 7px 0;
+}
+.post a {
+	color: black;
+}
+.post strong {
+	font-size: 1.2;
+}
+.postby, .post small {
+	color: #666;
+}
+#ffslides{
+	float: left;
+	width: 450px;
+}
+#fflinks{
+	float: right;
+	width: 439px;
+}
+#slideshow{
+	margin-bottom: 15px;
+}
+.cblockdk {
+	color: #f63;
+	font-size: 15px;
+	position: absolute;
+	/* bottom: 6px; for form */
+	bottom: 8px;
+}
+.cblockdk a {
+	color: #f63;
+}
+#fflinks .foreverblue{
+	display: block;
+	background: url('../images/foreverbluebg.jpg') top right no-repeat;
+	width: 100%;
+	clear: both;
+	min-height: 128px;
+	padding-top: 70px;
+}
+#fflinks p{
+	width: 270px;
+	font-weight: bold;
+	font-size: 1.1em;
+}
+#fflinks p.notes{
+	font-size: 90%;
+}
+#ffslides .link{
+	margin: 0;
+	padding: 0;
+	float: left;
+	width: 170px;
+}
+#ffslides #viewPhoto a{
+	background: url('../images/fflinks.gif') top left no-repeat;
+	width: 100%;
+	height: 24px;
+	text-indent: -9999px;
+	display: block;
+}
+#ffslides #viewPhoto a:hover, #ffslides #viewPhoto a.active{
+	background: url('../images/fflinks.gif') 0px -24px no-repeat;
+}
+#ffslides #viewVid{
+	float: right;
+}
+#ffslides #viewVid a{
+	background: url('../images/fflinks.gif') -170px 0px no-repeat;
+	width: 170px;
+	height: 24px;
+	text-indent: -9999px;
+	margin-bottom: 15px;
+	display: block;
+}
+#ffslides #viewVid a:hover, #ffslides #viewVid a.active{
+	background: url('../images/fflinks.gif') -170px -24px no-repeat;
+}
+#fflinks .weldtalk{
+	display: block;
+	width: 299px;
+	background: url('../images/weldtalkLogoBig.gif') top left no-repeat;
+	padding-left: 150px;
+	height: 178px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #ccc;
+}
+#fflinks .facebook{
+	padding: 10px 0;
+	width: 100%;
+	overflow: hidden;
+	border-bottom: 1px solid #ccc;
+	clear: both;
+}
+#fflinks .facebook img{
+	float: right;
+	display: inline;
+	margin-right: 50px;
+}
+#fflinks .facebook p{
+	background: url('../images/facebooklogo.gif') top left no-repeat;
+	padding-top: 55px;
+	margin: 0;
+	width: 130px;
+	float: left;
+}
+#ffslides .share{
+	width: 100%;
+	margin-top: 10px;
+	padding-top: 10px;
+	border-top: 1px solid #ccc;
+	clear: both;
+}
+#ffslides .share p{
+	font-weight: bold;
+	color: #ff6633;
+}
+#ffslides .share label{
+	font-weight: bold;
+}
+#ffslides .share form{
+	text-align: right;
+	padding-left: 155px;
+}
+#ffslides .share #send{
+	float: right;
+	margin-top: 0;
+}
+#ffslides .share input, #ffslides .share label{
+	float: left;
+}
+#ffslides .share label{
+	margin-top: 10px;
+	margin-right: 4px;
+}
+#ffslides .share input{
+	margin-top: 2px;
+}
+/* Accessories pages */
+#pgAccessories #wrap{
+	background-color: #fff;
+}
+#pgAccessories #main{
+	width: 100%;	
+}
+
+/* Old Products main table
+#accyprods {
+	margin-left: 240px;
+	padding-top: 75px;
+	padding-bottom: 25px;
+}
+*/
+#pgAccessories #accyprods {
+	margin: 100px 25px 0px 25px;
+	display: block;
+	border-top: 3px solid #fd6637;
+	overflow: hidden;
+}
+#pgAccessories tr.dotline td {
+	padding: 15px 0;
+}
+#pgAccessories #accyprods table{
+	width: auto; !important	
+}
+#pgAccessories #accyprods th {
+	text-align: left;
+}
+#pgAccessories #accyprods tr th.prodname {
+	font-size: 13px;
+}
+#pgAccessories #accyprods .prodchart th,
+#pgAccessories #accyprods .prodchart td {
+	font-size: 11px;
+}
+#pgAccessories #accyprods .tipfits {
+	border-top: 1px solid #999;
+	font-size: 11px;
+	padding: 5px 0;
+}
+#pgAccessories #sidebarfill ul ul {
+	list-style: disc;
+	font-size: 11px;
+	margin-top: 4px;
+}
+#pgAccessories #sidebarfill ul li {
+	margin-bottom: 4px;
+}
+
+
+/* @group Dynamic */
+#pgAccessories #wfw, #sidebarfill{
+	width: auto;
+}
+#pgAccessories .overview{
+	float: right;
+	margin-left:20px;
+}
+#pgAccessories #sidebarfill{
+	border-bottom: 1px solid #999999;
+	margin-right: 25px;
+
+}
+#pgAccessories #sidebarfill ul{
+	padding: 0 5px 0 5px;
+	overflow: hidden;
+	zoom: 1;
+	margin-bottom: 10px;
+}
+#pgAccessories #sidebarfill li{
+	float: left;
+	width: 24%;
+}
+/* @group accessoriesList */
+#pgAccessories #accessoriesList {
+	display: block;
+	color: #555;
+	margin-left: 25px;
+	zoom:1;
+	border-top: 3px solid #FD6637;
+	margin-top: 1.5em;
+	margin-right: 25px;
+}
+#pgAccessories #accessoriesList ul, #accessoriesList li{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#pgAccessories #accessoriesList ul{
+	margin: 1em 0;
+}
+#pgAccessories #accessoriesList h2, #accessoriesList h3, #accessoriesList li strong{
+	color: #000;
+}
+#pgAccessories #accessoriesList li strong {
+	width: 20%;
+	float: left;
+	display: block;
+	margin-bottom: 1px;
+}
+#pgAccessories #accessoriesList li .copy {
+	width: 75%;
+	float: left;
+}
+#pgAccessories #accessoriesList li{
+	width: 100%;
+	overflow: hidden;
+	padding-bottom: .2em;
+}
+#pgAccessories #accessoriesList .accessory li{
+	width: auto;
+}
+#pgAccessories #accessoriesList .accessory{
+	width: 420px;
+	padding-right: 20px;
+	float: left;
+	overflow: hidden;
+}
+#pgAccessories #accessoriesList .lastcomp{
+	clear:both;
+	
+}
+#pgAccessories #accessoriesList #last{
+    float: none;
+}
+#pgAccessories #accessoriesList .topfill{
+	height: 35px;
+	width: 100%;
+}
+.lastcomp h3{
+	border-bottom: 1px solid black;	
+}
+#pgAccessories #accessoriesList .row{
+	border-bottom: 1px solid #ccc;
+	width: 100%;
+}
+#pgAccessories #accessoriesList .last{
+	padding-right: 0;
+	width: 440px;
+	float:left;
+	text-align: left;
+	padding-left: 20px;
+}
+/*#pgAccessories #accessoriesList .accessory p{
+	width: 300px;
+}*/
+#pgAccessories .accwrapper{
+	width: 100%;	
+	padding-top: 10px;
+}
+#pgAccessories #copyright{
+	background-color: #000;
+}
+#pgAccessories .clearboth{
+	clear:both	
+}
+/* @end */
+
+/* @end Accessories page */
+#pgAccessories .accyimg img {
+max-height: 100px;
+}

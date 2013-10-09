@@ -1,0 +1,404 @@
+
+#tabbedarea {
+    /*float: left;*/
+    margin: 0 25px 25px 0;
+    min-height: 501px;
+    width: 930px;
+    margin: 40px auto 0;
+}
+* html #tabbedarea {
+    min-height: auto;
+    height: 501px;
+}
+#tabs {
+    background: #C6C6C6;
+    border-bottom: 1px solid #999;
+    height: 22px;
+}
+
+.activetab{
+    background-position: left -22px !important;   
+}
+
+* html #tabs {
+    background: white url('../../images/ie6/graybar.png') repeat-x left bottom;
+    border-bottom: none;
+    height: 23px;
+}
+#tabs a {
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    display: block;
+    float: left;
+    margin-right: 4px;
+    outline: none;
+    height: 23px;
+    width: 109px;
+}
+#tabs a:hover { background-position: left -22px; }
+#tabs a span { display: none; }
+#tabs a.tabon {
+    background-position: left top;
+}
+.tabcontent {
+    background: white;
+    border-color: #999;
+    border-style: solid;
+    border-width: 0 1px 1px 1px;
+    padding: 10px 0px;
+}
+.onprintable .tabcontent {
+    margin-bottom: 20px;
+}
+.gray {
+    color: #999;
+}
+
+#tabWD { background-image: url('../images/tabWelding.png'); width: 142px !important; }
+#tabAE { background-image: url('../images/tabAccessories.html'); width: 152px !important; }
+#tabEO { background-image: url('../images/tabEquipment.html'); width: 126px !important; }
+#tabWS { background-image: url('../images/tabService.html'); width: 89px !important; }  
+#tabOR { background-image: url('../images/tabOnline.png'); width: 126px !important; }
+
+#tcAccessories img {
+    /*margin-left: 5px;*/
+}
+
+.tabcontent table {
+    width: 100%;
+}
+.tabcontent table table {
+    width: auto;
+}
+.tabcontent th {
+    color: #f63;
+    text-align: right;
+}
+
+.tabcontent th, .tabcontent td {
+    border-bottom: 1px solid #999;
+    padding: 10px 5px;
+    vertical-align: top;
+}
+
+.tabcontent td{
+    border-bottom: 0px !important;
+}
+
+.tabcontent td ul {
+    margin: 0;
+    padding: 0 0 0 15px;
+}
+.tabcontent td li {
+    margin: 0;
+}
+.tabcontent .lastrow th,
+.tabcontent .lastrow td {
+    border-bottom: none;
+}
+.tabcontent table table th,
+.tabcontent table table td {
+    border: none;
+    padding: 2px;
+    vertical-align: middle;
+}
+
+#form-div {
+    width:48%; 
+    float: left;
+    padding: 5px 10px;
+}
+
+#tbl-form td{
+    border: 0px;
+    background: #D7D7D7;
+}
+
+#tbl-result, #tcFeatures-tbl-result, #tcAccessories-tbl-result,#tcService-tbl-result
+{
+    margin-top: 10px;
+}
+
+#tbl-result td, #tcFeatures-tbl-result td, #tcAccessories-tbl-result td,#tcService-tbl-result td 
+{
+    border: 0px;
+}
+
+#retail-result {
+    padding: 5px 10px;
+}
+
+/* Below Css is used for g-map div on Welding Destination tab */
+#tbl-result .gmapLocation,
+#tbl-result .gmapLocation2,
+#tcFeatures-tbl-result .gmapLocation,
+#tcFeatures-tbl-result .gmapLocation2,
+#tcAccessories-tbl-result .gmapLocation,
+#tcAccessories-tbl-result .gmapLocation2,
+#tcService-tbl-result .gmapLocation, 
+#tcService-tbl-result .gmapLocation2
+{
+    background: #F5F5F5;
+    border: none;
+    margin: 0;
+    padding: 10px;
+    width: 429px;
+}
+
+#tbl-result .gmapLocation2, 
+#tcFeatures-tbl-result .gmapLocation2, 
+#tcAccessories-tbl-result .gmapLocation2,
+#tcService-tbl-result .gmapLocation2 {
+    background: #EEE;
+}
+
+#tbl-result .gmapLocation H4,
+#tbl-result .gmapLocation2 H4,
+#tcFeatures-tbl-result .gmapLocation H4,
+#tcFeatures-tbl-result .gmapLocation2 H4,
+#tcAccessories-tbl-result .gmapLocation H4,
+#tcAccessories-tbl-result .gmapLocation2 H4,
+#tcService-tbl-result .gmapLocation2 H4 
+ {
+    color: #FF6632;
+    display: inline;
+    font-size: 1.0em;
+    margin: 0;
+}
+#tbl-result .gmapIcon,
+#tcFeatures-tbl-result .gmapIcon,
+#tcAccessories-tbl-result .gmapIcon,
+#tcService-tbl-result .gmapIcon {
+    cursor: pointer;
+    float: left;
+    margin: 0 10px 0 0;
+    height: 34px;
+    width: 20px;
+}
+#tbl-result .gmapLocInfo,
+#tcFeatures-tbl-result .gmapLocInfo,
+#tcAccessories-tbl-result .gmapLocInfo,
+#tcService-tbl-result .gmapLocInfo {
+    float: left;
+}
+#tbl-result .gmapLocInfo IMG,
+#tcFeatures-tbl-result .gmapLocInfo IMG, 
+#tcAccessories-tbl-result .gmapLocInfo IMG, 
+#tcService-tbl-result .gmapLocInfo IMG
+{
+    margin-right: 3px;
+}
+#tbl-result .gmapLocServices A IMG,
+#tcFeatures-tbl-result .gmapLocServices A IMG, 
+#tcAccessories-tbl-result .gmapLocServices A IMG,
+#tcService-tbl-result .gmapLocServices A IMG {
+    border: none;
+}
+#tbl-result .gmapLocServices,
+#tcFeatures-tbl-result .gmapLocServices,
+#tcAccessories-tbl-result .gmapLocServices,
+#tcService-tbl-result .gmapLocServices {
+    float: right;
+    text-align: right;
+}
+#tbl-result .gmapLocationSelected,
+#tcFeatures-tbl-result .gmapLocationSelected,
+#tcAccessories-tbl-result .gmapLocationSelected, 
+#tcService-tbl-result .gmapLocationSelected{
+    background: #DFEFFF;
+}
+
+#loader {
+    font-size:12px;
+    font-weight:bold;
+    width:429px;
+}
+#loader img{
+    vertical-align: middle;
+}
+
+#location-message #resultsPagination {
+    margin:0px 0 2px;
+    text-align:right;
+    width: 446px;
+}
+
+#location-message #youAreHere {
+    float:none;
+    margin-left:0px;
+    text-align:right;
+}
+
+#location-message #youAreHere p {
+    display:block;
+    float:right;
+    margin:0;
+    padding:4px 5px;
+}
+
+#location-message img {
+    margin:0 10px; 
+    float: none;
+}
+
+#retail-result span{
+    font-weight: bold;
+    color: #FF6633;
+    text-decoration: underline;
+}
+
+/* Below Css is for various button */
+#btnMoreLocation {
+    /*background-image: url('/wheretobuy/images/MoreLocations1.gif');*/
+}
+
+#mainfree {
+    background: url("../images/wtbhead_new.html") no-repeat scroll left top #FFF !important;
+}
+
+#wtbheader span{
+    display: block !important;
+}
+
+.imgpadding{
+    padding: 5px 0px;
+}
+
+#dropnavWhereToBuy td {
+    border-right:0px !important;
+}
+
+.btnSearch{
+    background: url("../images/btnSearch.gif");
+    width: 106px;
+    height: 22px;
+}
+
+/* Below Css is used for modal popup */
+#mask {
+  position:fixed;
+  left:0;
+  top:0;
+  z-index:9000;
+  background-color:#000;
+  display:none;
+}
+ 
+#boxes .window {
+  position:absolute;
+  left:0;
+  top:0;
+  width:440px;
+  height:200px;
+  display:none;
+  z-index:9999;
+  padding:20px;
+}
+
+#boxes #dialog {
+  width:375px; 
+  height:230px;
+  padding:0px;
+  background-color:#FFFFFF;
+  border:5px solid #7D7D7D;
+  position:fixed; 
+}
+
+#boxes #dialog h3, #boxes #dialog label{
+  /*background-color:#c2c2c2;*/
+  font-size: 11px !important;
+  font-weight: bold !important;
+  
+}
+
+#boxes #dialog .head-title{
+    background:none repeat scroll 0 0 #666666;
+    color:#FFFFFF;
+    padding-left: 15px;
+    padding-right: 5px;
+    padding-bottom: 3px;
+    overflow: hidden;
+}
+
+#boxes #dialog .send-email-form{
+    padding-left: 5px;
+    padding-top: 15px;
+}
+
+#boxes #dialog .btnclass{
+    cursor: pointer;
+    text-decoration:none;
+    border: 2px solid rgb(153, 0, 0);
+    padding: 5px 10px 5px 10px;
+    color:rgb(255, 255, 255);
+    font-size:14px;
+    font-family:arial, serif;
+    text-shadow: 0px 0px 5px rgb(255, 255, 255);
+    font-size: 14px;
+    border-radius:5px 5px 5px 5px;
+    -moz-border-radius:5px 5px 5px 5px;
+    -webkit-border-radius:5px 5px 5px 5px;
+    box-shadow:0px 0px 0px rgb(0, 0, 0);
+    -moz-box-shadow:0px 0px 0px rgb(0, 0, 0);
+    -webkit-box-shadow:0px 0px 0px rgb(0, 0, 0);
+    background-color: rgb(153, 0, 0);
+    background-image:linear-gradient(-90deg, rgba(153, 0, 0, 0.25), rgb(183, 82, 16));
+    background-image:-webkit-gradient(linear, 50% 0%, 50% 100%, from(rgba(153, 0, 0, 0.25)), to(rgb(183, 82, 16)));
+    background-image:-moz-linear-gradient(-90deg, rgba(153, 0, 0, 0.25), rgb(183, 82, 16));
+}
+#boxes #dialog .btnclass:hover{
+    cursor: pointer;
+    text-decoration:none;
+    border: 2px solid rgb(153, 0, 0);
+    padding: 5px 10px 5px 10px;
+    color:rgb(255, 255, 255);
+    font-size:14px;
+    font-family:arial, serif;
+    text-shadow: 0px 0px 5px rgb(255, 255, 255);
+    font-size: 14px;
+    border-radius:5px 5px 5px 5px;
+    -moz-border-radius:5px 5px 5px 5px;
+    -webkit-border-radius:5px 5px 5px 5px;
+    box-shadow:0px 0px 0px rgb(0, 0, 0);
+    -moz-box-shadow:0px 0px 0px rgb(0, 0, 0);
+    -webkit-box-shadow:0px 0px 0px rgb(0, 0, 0);
+    background-color: rgb(153, 0, 0);
+    background-image:linear-gradient(-90deg, rgba(153, 0, 0, 0.25), rgb(183, 82, 16));
+    background-image:-webkit-gradient(linear, 50% 0%, 50% 100%, from(rgba(153, 0, 0, 0.25)), to(rgb(183, 82, 16)));
+    background-image:-moz-linear-gradient(-90deg, rgba(153, 0, 0, 0.25), rgb(183, 82, 16));
+}
+#boxes #dialog .btnclass:active{
+    cursor: pointer;
+    text-decoration:none;
+    border: 2px solid rgb(153, 0, 0);
+    padding: 5px 10px 5px 10px;
+    color:rgb(255, 255, 255);
+    font-size:14px;
+    font-family:arial, serif;
+    text-shadow: 0px 0px 5px rgb(255, 255, 255);
+    font-size: 14px;
+    border-radius:5px 5px 5px 5px;
+    -moz-border-radius:5px 5px 5px 5px;
+    -webkit-border-radius:5px 5px 5px 5px;
+    box-shadow:0px 0px 0px rgb(0, 0, 0);
+    -moz-box-shadow:0px 0px 0px rgb(0, 0, 0);
+    -webkit-box-shadow:0px 0px 0px rgb(0, 0, 0);
+    background-color: rgb(153, 0, 0);
+    background-image:linear-gradient(-90deg, rgba(153, 0, 0, 0.25), rgb(183, 82, 16));
+    background-image:-webkit-gradient(linear, 50% 0%, 50% 100%, from(rgba(153, 0, 0, 0.25)), to(rgb(183, 82, 16)));
+    background-image:-moz-linear-gradient(-90deg, rgba(153, 0, 0, 0.25), rgb(183, 82, 16));
+}
+
+#loader{
+    background:none repeat scroll 0 0 #C2C2C2;
+    display:none;
+    height:207px;
+    margin:0 auto;
+    opacity:0.9;
+    position:fixed;
+    text-align:center;
+    width:375px;
+    filter: alpha(opacity=90);
+}
+

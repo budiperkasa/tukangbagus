@@ -1,0 +1,135 @@
+#pgTIG #main { background: white url('../images/bwprocesses/tig.jpg') no-repeat 25px bottom; }
+#pgStick #main { background: white url('../images/bwprocesses/stick.html') no-repeat 25px bottom; }
+#pgPlasma #main { background: white url('../images/bwprocesses/plasma.html') no-repeat 25px bottom; }
+#pgWireFeed #main { background: white url('../images/bwprocesses/wirefeed.html') no-repeat 25px bottom; }
+#pgGenerator #main { background: white url('../images/bwprocesses/generator.html') no-repeat 25px bottom; }
+#pgOxyfuel #main { background: white url('../images/bwprocesses/gaswelding.jpg') no-repeat 25px bottom; }
+#pgSpoolGuns #main { background: white url('../images/bwprocesses/spoolgun.jpg') no-repeat 25px bottom; }
+/*
+This is the products page gray sidebar that has been removed
+#pgAccessories #main { background: white url('/images/bwprocesses/siderepeat.png') repeat-y 25px bottom; }
+*/
+#pgAbrasives #main { background: white url('../images/bwprocesses/siderepeat.png') repeat-y 25px bottom; }
+#pgAbrasives #sidebarfill { background: #eee url('../images/bwprocesses/abrasives.jpg') no-repeat center bottom; padding-bottom: 439px; }
+
+#main {
+	padding: 1px 0 0 0;
+}
+
+#leftside {
+	float: left;
+}
+
+.dotline td{
+	border-top: 1px solid #CCCCCC;
+	padding: 10px;
+}
+.dotline td img{
+	display: none;	
+}
+#intro {
+	background: white;
+	
+	margin: 0 15px 0 25px;
+	padding: 25px 10px;
+}
+#intro img {
+	float: left;
+}
+#wfw {
+	font-size: 30px;
+	margin: 0;
+	padding: 25px 30px;
+	text-align: left;
+	width: 200px;
+	
+	margin: 0 15px 0 25px;
+	padding: 25px 10px;
+	width: 169px;
+	
+	font-size: 24px;
+	margin: 0 0 0 33px;
+	padding: 4px 0 0 5px;
+	width: 139px;
+}
+#sidebar, #sidebarfill {
+	border-top: 1px solid #999;
+	font-size: 12px;
+	margin-left: 25px; /*25*/
+	margin-right: 15px;
+	padding: 13px 13px 344px;
+	width: 171px;
+}
+/* removing sidebarfill */
+#sidebarfill{
+	display: none;
+}
+/* end removing sidebarfill */
+#sidebar h3, #sidebarfill h3 {
+	margin: 0;
+}
+#sidebar ul, #sidebarfill ul {
+	list-style: none;
+	margin: 0 0 15px;
+	padding: 0 0 0 12px;
+}
+#sidebarfill {
+	background: #eee;
+	border-left: 1px solid #999;
+	border-right: 1px solid #999;
+	padding-bottom: 0;
+	width: 169px;
+}
+#prodtbl {
+	border-collapse: collapse;
+	float: right;
+	margin: 20px 20px 0px 0px; /*50.25.10.235*/
+	width: 696px;
+}
+#prodtbl th {
+	border-right: 1px solid #999;
+	padding: 5px;
+	text-align: right;
+	width: 85px;
+}
+#prodtbl td {
+	background: #eee;
+	border-bottom: 1px solid #999;
+	border-right: 1px solid #999;
+	font-size: 11px;
+	padding: 5px;
+	text-align: center;
+}
+#prodtbl .prodimgrow td {
+	background: white;
+	border-top: 1px solid #999;
+	font-weight: bold;
+	vertical-align: bottom;
+}
+#prodtbl td.newprod {
+	background: white url('../products/images/new.html') no-repeat left top;
+	padding-top: 25px;
+}
+#prodtbl tr.prodimgrow td:hover {
+	cursor: pointer;
+}
+#prodtbl tr.prodimgrow td:hover a, #prodtbl tr.prodimgrow a:hover{
+	color: #000;
+	text-decoration: underline;
+}
+#prodtbl td.upgprev {
+	background: #eee url('../products/images/upgprev.html') no-repeat 4px center;
+	padding-left: 14px;
+}
+
+#footnotes {
+	color: #999;
+	font-size: 11px;
+	margin-top: 10px;
+	margin-left: 450px;
+}
+#upgprevkey {
+	background: url('../products/images/upgprevkey.png') no-repeat left center;
+	height: 20px;
+	padding: 5px 0 0 10px;
+}

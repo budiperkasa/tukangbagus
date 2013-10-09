@@ -1,0 +1,20 @@
+#flashHeader,
+#subheaderBar,
+.floatContainer,
+.blackline,
+#youAreHereForm,
+#resultsPagination,
+#rightColumn,
+#footer,
+#mapHeader,
+.noprint {
+ display: none;
+}
+
+#content {
+ border: none;
+}
+
+#mapPrintableHeader {
+ display: block;
+}

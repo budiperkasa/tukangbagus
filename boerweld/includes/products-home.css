@@ -1,0 +1,129 @@
+#main {
+	padding: 18px 20px;
+}
+#intro {
+	line-height: 1.8em;
+	margin-bottom: 25px;
+}
+#featured {
+	float: left;
+	margin: 0 0 15px;
+	width: 693px;
+}
+#featured .prodcat {
+	border: 1px solid #ccc;
+	float: left;
+	margin-bottom: 5px;
+	margin-right: 5px;
+	width: 224px;
+}
+#featured .prodcatbtm {
+	border: none;
+	padding-top: 1px;
+	width: 226px;
+}
+#featured h3 {
+	color: white;
+	font-size: 13px;
+	height: auto;
+	margin: 0;
+	/*padding: 7px 5px 7px 35px;*/
+}
+#featured h3 a {
+	display: block;
+	padding: 7px 5px 7px 35px;
+}
+#featured h3 a, #featured h3 a:hover, #featured h3 a:visited {
+	color: white;
+}
+#featured #catOxyfuel h3 a {
+	line-height: 13px;
+	padding: 3px 5px 11px 35px;
+}
+#featured #catWireFeed { background: url('../products/images/home/wirefeed.jpg') no-repeat left top; }
+#featured #catWireFeed h3 a {
+	padding-left: 65px;
+}
+#featured #catGenerator { background: url('../products/images/home/generator.jpg') no-repeat left top; }
+#featured #catHelmets { background: url('../products/images/home/helmets.html') no-repeat left top; }
+#featured #catTIG { background: url('../products/images/home/tig.html') no-repeat left top; }
+#featured #catStick { background: url('../products/images/home/stick.html') no-repeat left top; }
+#featured #catBattery { background: url('../products/images/home/battery.html') no-repeat left top; }
+#featured #catPlasma { background: url('../products/images/home/plasma.html') no-repeat left top; }
+#featured #catRodWire { background: url('../products/images/home/rodwire.html') no-repeat left top; }
+#featured #catOxyfuel { background: url('../products/images/home/oxyfuel.html') no-repeat left top; }
+#featured #catAccy { background: url('../products/images/home/accessoriesc81e.html?2') no-repeat left top; }
+#featured #catStick, #featured #catOxyfuel {
+	clear: left;
+}
+#featured .phototall h3 a {
+	height: 209px; /*223*/
+}
+#featured .photoshort h3 a {
+	height: 129px; /*143*/
+}
+#featured #catAccy h3 a {
+	height: 129px;
+}
+#featured .selection {
+	background: #ccc;
+	text-align: right;
+	padding: 4px;
+	height: 19px;
+}
+#featured .selection select {
+	font-size: 11px;
+}
+#featured .selection a {
+	color: #333;
+	display: block;
+	padding: 3px 0 2px;
+}
+#featured .catlinks {
+	padding: 15px 15px 0;
+	text-align: right;
+}
+
+.catlinks {
+	font-size: 11px;
+	line-height: 1.7em;
+}
+
+#catSpot .catlinks{
+	padding-left: 0px;
+}
+#catSpot h3 { background: url('../products/images/home/spot.png') no-repeat left center; }
+#catOxy h3 { background: url('../products/images/home/oxyfuel-2.html') no-repeat left center; }
+
+#rightside .prodcat h3 a, #rightside .prodcat h3 a:hover, #rightside .prodcat h3 a:visited,
+#bottomcats .prodcat h3 a, #bottomcats .prodcat h3 a:hover, #bottomcats .prodcat h3 a:visited {
+	color: black;
+}
+
+#rightside {
+	float: left;
+	margin: 0 0 0 10px;
+	width: 198px;
+}
+#rightside .prodcat h3 {
+	font-size: 13px;
+	height: 19px;
+	margin: 0;
+	padding: 5px 0 0 30px;
+}
+#rightside .prodcat {
+	margin-bottom: 15px;
+}
+#rightside .catlinks {
+	margin-left: 30px;
+}
+
+/* IE7 Patch */
+.addthis
+{
+display: block;
+float: right;
+margin: 0px 0px 20px 0px;
+}
+
+#rightside .prodcat { clear: both; }

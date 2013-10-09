@@ -1,0 +1,354 @@
+v\:* {
+behavior:url(#default#VML);
+}
+
+#mappingWrapper A IMG {
+	border: none;
+}
+#mappingWrapper {
+	font-family: Arial, Helvetica, Geneva;
+	font-size: 11px; /*10pt;*/
+	padding-top: 5px;
+}
+#mappingWrapper H3 {
+	font-size: 1.8em;
+	margin: 0 0 4px 0;
+	padding-top: 5px;
+}
+#mapPrintableHeader {
+	display: none;
+}
+.reqd {
+	color: Red;
+}
+
+.paginate {
+	display: none;
+}
+
+.gmapLocation,
+.gmapLocation2 {
+	background: #F5F5F5;
+	border: none;
+	margin: 0;
+	padding: 10px;
+	width: 525px;
+}
+.gmapLocation2 {
+	background: #EEE;
+}
+.gmapLocation H4,
+.gmapLocation2 H4 {
+	color: #FF6632;
+	display: inline;
+	font-size: 1.0em;
+	margin: 0;
+}
+.gmapIcon {
+	cursor: pointer;
+	float: left;
+	margin: 0 10px 0 0;
+	height: 34px;
+	width: 20px;
+}
+.gmapLocInfo {
+	float: left;
+}
+.gmapLocInfo IMG {
+	margin-right: 3px;
+}
+.gmapLocServices A IMG {
+	border: none;
+}
+.gmapLocServices {
+	float: right;
+	text-align: right;
+}
+.gmapLocationSelected {
+	background: #DFEFFF;
+}
+
+#youAreHere {
+	float: left;
+	margin-left: 80px;
+}
+#youAreHere IMG {
+	margin: 5px 10px 5px 9px;
+	float: left;
+	margin: 0 10px;
+}
+#youAreHere P {
+	float: left;
+	margin: 0;
+	padding: 9px 5px 5px 5px;
+	display: block;
+	padding: 4px 5px;
+}
+#youAreRightHere {
+	display: none;
+	float: right;
+	padding: 10px 10px 0 10px;
+}
+#pageNext, #pagePrev {
+	margin-top: 1px;
+}
+
+#map {
+	height: 400px;
+	width : 730px;
+}
+#mapHeader {
+	margin-bottom: 2px;
+}
+#mapHeader H3,
+#mapHeader FORM {
+	display: inline;
+}
+#mapHeader .left {
+	float: left;
+}
+#mapHeader .right {
+	margin-top: 8px;
+	float: right;
+}
+#mapHeaderText,
+#mapHeaderForm {
+	margin: 4px 0.5em 0 0;
+	padding: 0;
+}
+			
+#rightColumn {
+	float: right;
+	width: 170px;
+	margin: 5px 0 10px 5px;
+}
+#newSearchPanel {
+	background: #F5F5F5;
+	border: none;
+	padding: 0;
+}
+#newSearchPanel H3 {
+	font-size: 1.2em;
+	margin: 0 0 2px 0;
+	padding: 4px 4px 2px;
+	text-align: center;
+}
+#newSearchPanel H4 {
+	/*background: #0E55A5;
+	color: White;
+	padding: 2px 4px 1px;*/
+	text-align: center;
+	font-size: 1.0em;
+	margin: 0 0 2px 0;
+	padding: 4px 4px 1px;
+}
+#newSearchPanel FORM {
+	margin: 0;
+	padding: 0;
+}
+#newSearchPanelIWrap {
+	padding-top: 5px;
+/*	min-height: 245px;
+	min-height: 216px;*/
+}
+#newSearchTop {
+	border-bottom: 1px solid #EEE;
+	padding: 0 5px 5px;
+}
+#newSearchTop LABEL {
+	font-weight: bold;
+}
+#newSearchTop input.maxinput {
+	width: 157px;
+	width: 117px;
+	margin-right: 4px;
+}
+#newSearchPanel P {
+	text-align: center;
+	margin: 5px;
+}
+#newSearchPanel FORM#frmFilter {
+	margin-bottom: 5px;
+}
+#submitNew {
+	background: #EEE;
+	margin-top: 3px;
+	padding: 3px;
+	text-align: center;
+}
+#newSearchPanel #cityinput {
+	width: 113px;
+}
+* html #newSearchPanel #cityinput {
+	width: 110px;
+}
+#newSearchPanel #stateinput {
+	width: 35px;
+}
+
+#distlocForm #distlocFormLeft {
+	background: #F7F7F7;
+	border: none;
+	padding: 0;
+	position: relative;
+}
+#distlocForm #distlocFormLeft P {
+	margin: 0 10px 5px;
+}
+#distlocForm H4 {
+	background: #FF6632;
+	border: none;
+	color: White;
+	font-size: 1.1em;
+	margin: 0 0 5px 0;
+	padding: 2px 5px;
+	text-align: center;
+}
+#distlocForm FORM {
+	margin : 0;
+	padding: 5px 10px 0;
+}
+#distlocForm FIELDSET {
+	margin: 10px 50px 5px 0;
+	border: none;
+}
+#distlocForm DIV {
+	float: left;
+	padding: 5px 15px;
+	width: 45%;
+}
+#distlocForm DIV DIV {
+	width: auto;
+	float: none;
+	padding: 5px 0;
+}
+#distlocForm H5 {
+	font-size: 1em;
+	margin: 5px 0 2px 0;
+}
+
+#distlocForm DIV P {
+	line-height: 1.5em;
+	margin: 0;
+	text-align: justify;
+}
+#distlocForm DIV P.error {
+	background: #CF5A5A;
+	border: none;
+	margin: 10px 0;
+	padding: 10px 15px;
+}
+#distlocForm LABEL.lbl {
+	display: block;
+	width: 8em;
+}
+#distlocForm #zip {
+	width: 100px;
+}
+#distlocForm #nozip {
+	display: block;
+	font-size: 8pt;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	width: 65px;
+}
+#distlocForm .nozipfld {
+	display: none;
+}
+#distlocForm #mapbtnWrap {
+	padding: 0;
+	text-align: right;
+	width: auto;
+}
+#distlocForm #distlocFormRight a {
+	color: #F60;
+}
+#distlocForm #distlocFormRight p {
+	margin-bottom: 7px;
+}
+#mapbtn {
+	padding: 3px 15px;
+	margin-bottom: 15px;
+}
+
+#mainContent {
+	margin-right: 10px;
+}
+#mainContentWrap {
+	margin-left: 10px;
+}
+#leftContent {
+	display: none;
+}
+
+#matchingLocations {
+	float: left;
+	margin: 5px 0;
+	width : 545px;
+}
+#matchingLocations a {
+	text-decoration: underline;
+}
+
+			
+#resultsPagination {
+	text-align: center;
+	margin: 10px 0 2px;
+}
+* html #resultsPagination {
+	margin-bottom: 5px;
+}
+#resultsPagination SPAN {
+	float: left;
+}
+#resultsPagination SPAN.flrt {
+	float: right;
+}
+#resultsPagination span IMG {
+	width : 71px;
+	height: 17px;
+}
+#resultsPagination .vertCenter {
+	padding: 3px 5px 0;
+}
+
+#resultsData {
+	border: none;
+	margin-bottom: 5px;
+}
+
+.bubblewrap {
+	min-width: 275px;
+}
+
+DIV.maplinks {
+	margin-top: 4px;
+}
+
+#content {
+	padding-bottom: 15px;
+}
+
+
+#descKey {
+	border: 1px solid #eee;
+	font-size: 9px;
+	margin: 10px 0 0;
+	padding: 0;
+}
+#descKey h3 {
+	background: #eee;
+	font-size: 11px;
+	margin: 0;
+	padding: 2px 0;
+	text-align: center;
+}
+#descKey ul {
+	list-style: none;
+	margin: 5px 5px 0 10px;
+	padding: 0;
+}
+#descKey li {
+	margin-bottom: 4px;
+}
