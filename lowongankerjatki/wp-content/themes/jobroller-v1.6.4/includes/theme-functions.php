@@ -1621,9 +1621,7 @@ function jr_job_author() {
 			echo $company_name;
 		}
 
-		$format = __(' &ndash; Diposting oleh <a href="%s">%s</a>', 'appthemes');
-	} else {
-		$format = '<a href="%s">%s</a>';
+		
 	}
 
 	$author = get_user_by('id', $post->post_author);
